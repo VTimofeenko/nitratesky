@@ -1,0 +1,8 @@
+diff -Naur teams-for-linux-0.7.0/ebuild_assets/teams-for-linux startup_script/ebuild_assets/teams-for-linux
+--- teams-for-linux-0.7.0/ebuild_assets/teams-for-linux	1969-12-31 16:00:00.000000000 -0800
++++ startup_script/ebuild_assets/teams-for-linux	2019-10-18 16:53:00.927110601 -0700
+@@ -0,0 +1,4 @@
++#!/bin/sh
++
++TEAMS_PATH=
++nohup "${TEAMS_PATH}"

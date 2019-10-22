@@ -1,0 +1,11 @@
+<repositories encoding="unicode" version="1.1">
+  <repo priority="50" quality="experimental">
+    <name>weaveworld</name>
+    <description>Various ebuilds repo</description>
+    <owner>
+      <email>nobody@example.org</email>
+      <name>none</name>
+    </owner>
+    <source type="git">https://github.com/SabbathHex/weaveworld.git</source>
+  </repo>
+</repositories>
