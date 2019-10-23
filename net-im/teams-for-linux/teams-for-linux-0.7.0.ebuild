@@ -43,7 +43,7 @@ src_install() {
 
 
 pkg_postinst() {
-	einfo "1024x1024 icon is not installed, since that size is not supported."
+	einfo "1024x1024 icon is not installed, since that size is not supported by portage."
 	einfo "Install manually if needed."
 	xdg_pkg_postinst
 }
