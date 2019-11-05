@@ -18,6 +18,12 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+src_unpack() {
+	default
+	mkdir "${WORKDIR}/${P}"
+	mv "${WORKDIR}/post_to_confluence" "${WORKDIR}/${P}" || die
+}
+
 src_install() {
 	dobin post_to_confluence
 }
