@@ -1,0 +1,30 @@
+diff -Naur teams-for-linux-1.0.0/ebuild_assets/firejail/teams-for-linux.profile new/ebuild_assets/firejail/teams-for-linux.profile
+--- teams-for-linux-1.0.0/ebuild_assets/firejail/teams-for-linux.profile	1969-12-31 16:00:00.000000000 -0800
++++ new/ebuild_assets/firejail/teams-for-linux.profile	2019-11-05 11:09:05.040025186 -0800
+@@ -0,0 +1,26 @@
++# Firejail profile for teams-for-linux
++# This file is included as part of teams-1.0.0 ebuild
++# Persistent local customizations
++include /etc/firejail/teams-for-linux.local
++# Persistent global definitions
++include /etc/firejail/globals.local
++
++whitelist ${HOME}/.config/teams-for-linux
++noblacklist /opt/teams-for-linux
++
++include /etc/firejail/disable-common.inc
++include /etc/firejail/disable-devel.inc
++include /etc/firejail/disable-programs.inc
++
++include /etc/firejail/whitelist-common.inc
++
++caps.drop all
++netfilter
++nodvd
++nonewprivs
++noroot
++notv
++protocol unix,inet,inet6
++seccomp
++
++private-tmp

@@ -13,16 +13,17 @@ LICENSE="GPL-3 MIT BSD" # to match various stuff from upstream
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND=""
-IUSE=""
+IUSE="firejail"
+RDEPEND="firejail? ( >=sys-apps/firejail-0.9.50 )"
 
 src_prepare() {
-	# add-icons includes icons from the repo
-    # add-startup-script makes it a little easier to generate desktop file
 	PATCHES=(
 		"${FILESDIR}/${PN}-add-icons.patch"
 		"${FILESDIR}/${PN}-add-startup-script.patch"
 	)
+	if use firejail; then
+		eapply "${FILESDIR}/${PN}-firejail.patch"
+	fi
 	default
 }
 
@@ -39,6 +40,9 @@ src_install() {
 
 	dobin ebuild_assets/${PN}
 	make_desktop_entry /opt/${PN}/${PN} "Teams for Linux" teams-for-linux
+	if use firejail; then
+		make_desktop_entry "firejail --profile=/opt/${PN}/ebuild_assets/firejail/${PN}.profile /opt/${PN}/${PN}" "[FJ] Teams for Linux" teams-for-linux
+	fi
 }
 
 
