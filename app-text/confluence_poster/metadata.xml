@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer>
+	<email>9886026+SabbathHex@users.noreply.github.com</email>
+</maintainer>
+<use>
+	<flag name='bin'>If used - installs only the compiled zipapp package</flag>
+</use>
+</pkgmetadata>
