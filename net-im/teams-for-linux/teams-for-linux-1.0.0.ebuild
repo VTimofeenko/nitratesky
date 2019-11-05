@@ -38,7 +38,7 @@ src_install() {
 	doicon ebuild_assets/icons/teams-for-linux.png
 
 	dobin ebuild_assets/${PN}
-	make_desktop_entry /opt/${PN}/${PN} "Teams for Linux" teams-for-linux.png
+	make_desktop_entry /opt/${PN}/${PN} "Teams for Linux" teams-for-linux
 }
 
 
