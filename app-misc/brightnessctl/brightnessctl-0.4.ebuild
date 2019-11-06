@@ -22,10 +22,9 @@ fi
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="systemd udev"
+IUSE="udev"
 
 DEPEND="
-systemd? ( sys-apps/systemd:= )
 udev? ( virtual/udev )
 "
 RDEPEND="${DEPEND}"
@@ -33,12 +32,9 @@ BDEPEND=""
 
 src_install() {
 	local myconf
-	if use systemd && use udev ; then
-		myconf="${myconf} ENABLE_SYSTEMD=1 INSTALL_UDEV_RULES=0"
-		einfo "Both systemd and udev are specified, defaulting to systemd only"
-	elif use udev && ! use systemd; then
-		myconf="${myconf} ENABLE_SYSTEMD=0 INSTALL_UDEV_RULES=1"
-	elif ! use udev ; then
+	if use udev ; then
+		myconf="${myconf} INSTALL_UDEV_RULES=1"
+	else
 		myconf="${myconf} INSTALL_UDEV_RULES=0"
 	fi
 
