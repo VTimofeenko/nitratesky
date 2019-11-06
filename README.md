@@ -18,4 +18,6 @@ Supplementary script for writing confluence wiki articles in vim. Capable of ale
 
 ## `app-misc/brightnessctl`
 
-Script to adjust display/led brightness ([source repository](https://github.com/Hummer12007/brightnessctl))
+Script to adjust display/led brightness ([source repository](https://github.com/Hummer12007/brightnessctl)).
+
+**Important note**: there are two USE flags in this ebuild in the 9999 version — `systemd` and `udev`. If systemd is enabled — resulting binary is installed with suid, regardless of whether `udev` is enabled.
