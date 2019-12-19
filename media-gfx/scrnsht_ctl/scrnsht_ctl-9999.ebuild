@@ -20,7 +20,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="media-gfx/maim"
+DEPEND="
+media-gfx/maim
+x11-libs/libnotify
+"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
