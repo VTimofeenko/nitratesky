@@ -20,7 +20,7 @@ DEPEND="
 virtual/udev
 x11-apps/xrandr
 net-misc/networkmanager
-sys-proces/at
+sys-process/at
 root-notify-send? ( x11-misc/root-notify-send )
 "
 RDEPEND=""
