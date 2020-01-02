@@ -14,7 +14,7 @@ This is a repository for the ebuilds that I wrote and attempt to maintain.
 
 ## `media-gfx/scrnsht_ctl`
 
-A simple screenshot ctl wrapper([source](https://gist.github.com/SabbathHex/87940496bd6bb9eec7f397bfe2ffe411)) around maim to be used with the i3/sway window managers. Allows screenshotting only the current monitor.
+A simple screenshot ctl wrapper([source](https://gist.github.com/SabbathHex/87940496bd6bb9eec7f397bfe2ffe411)) around maim to be used with the i3/sway window managers. Allows making a screenshot of only the current monitor.
 
 ## `app-text/confluence_poster`
 
@@ -25,3 +25,11 @@ Supplementary script for writing confluence wiki articles in vim. Capable of ale
 Script to adjust display/led brightness ([source repository](https://github.com/Hummer12007/brightnessctl)).
 
 **Important note**: there are two USE flags in this ebuild in the 9999 version — `systemd` and `udev`. If systemd is enabled — resulting binary is installed with suid, regardless of whether `udev` is enabled.
+
+## `x11-misc/monitors-switch`
+
+Small set of utilities that automatically sets the screens positions based on WiFi network the machine is currently connected to. See the [separate repo](https://github.com/SabbathHex/monitors-switch) for more details.
+
+## `x11-misc/root-notify-send`
+
+A small utility that allows sending desktop notifications to the currently logged in user from root user. Uses `savedconfig` configuration for setting the user and their user ID, see `files` directory inside the ebuild folder.

@@ -1,0 +1,25 @@
+diff --git a/display_detect.sh b/display_detect.sh
+index 1f9a3df..03292ee 100644
+--- a/display_detect.sh
++++ b/display_detect.sh
+@@ -6,6 +6,7 @@ export XAUTHORITY='<YOUR_XAUTHORITY_GOES_HERE>'
+ MAIN_SCREEN_STATUS=$(</sys/class/drm/card0/card0-eDP-1/status)
+ LEFT_SCREEN_STATUS=$(</sys/class/drm/card0/card0-DP-2/status)
+ RIGHT_SCREEN_STATUS=$(</sys/class/drm/card0/card0-HDMI-A-1/status)
++notify_cmd="/usr/bin/root-notify-send -a monitor_mode -i applets-screenshooter"
+
+
+ if [ $(nmcli -t --fields GENERAL.STATE con show ${WORK_WIFI}) == "GENERAL.STATE:activated" ]
+@@ -16,10 +17,12 @@ then
+         # Only switch when both external monitors are connected
+         xrandr --output DP-2 --auto --above eDP-1
+         xrandr --output HDMI-1 --auto --right-of DP-2
++        ${notify_cmd} "Work_mode"
+     elif [ "disconnected" == "${LEFT_SCREEN_STATUS}" ] || [ "disconnected" == ${RIGHT_SCREEN_STATUS} ]
+     then
+         # Switch to single mode when any monitor is disconnected
+         xrandr --output HDMI-1 --off
+         xrandr --output DP-2 --off
++        ${notify_cmd} "Single_mode"
+     fi
+ fi
