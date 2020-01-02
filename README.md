@@ -33,3 +33,7 @@ Small set of utilities that automatically sets the screens positions based on Wi
 ## `x11-misc/root-notify-send`
 
 A small utility that allows sending desktop notifications to the currently logged in user from root user. Uses `savedconfig` configuration for setting the user and their user ID, see `files` directory inside the ebuild folder.
+
+## `app-misc/tg-notify`
+
+A script that alerts user via Telegram using curl. Based on [this](https://gist.github.com/SabbathHex/bb2725beb6f321c4c065055deca8bacd) gist.
