@@ -20,6 +20,7 @@ DEPEND="
 virtual/udev
 x11-apps/xrandr
 net-misc/networkmanager
+sys-proces/at
 root-notify-send? ( x11-misc/root-notify-send )
 "
 RDEPEND=""
@@ -39,8 +40,8 @@ src_prepare () {
 
 src_install () {
 	insinto /lib/udev/rules.d
-	newins 95-display-hotplug.rules 95-display-hotplug.rules
-	# RULE
-	insinto /usr/local/bin
-
+	doins 95-display-hotplug.rules
+	insinto /usr
+	dosbin display_detect.sh
+	dosbin display_hotplug.sh
 }
