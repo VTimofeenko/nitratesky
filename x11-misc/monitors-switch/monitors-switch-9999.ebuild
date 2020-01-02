@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit git-r3
+inherit savedconfig git-r3
 
 DESCRIPTION="A basic script to detect when monitors are connected
 while the laptop is connected to a specific network."
@@ -13,8 +13,8 @@ EGIT_REPO_URI="https://github.com/SabbathHex/monitors-switch"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="amd64 x86"
-IUSE="root-notify-send"
+KEYWORDS="~amd64"
+IUSE="root-notify-send +savedconfig"
 
 DEPEND="
 virtual/udev
@@ -25,10 +25,22 @@ root-notify-send? ( x11-misc/root-notify-send )
 RDEPEND=""
 BDEPEND=""
 
+src_prepare () {
+	default
+	if use root-notify-send; then
+		eapply "${FILESDIR}/root-notify.patch"
+	fi
+
+	restore_config config.sed
+	for file in 95-display-hotplug.rules display_detect.sh; do
+		sed -i -f "${WORKDIR}/${P}/config.sed" "${WORKDIR}/${P}/${file}" || die "Sed failed on ${file}"
+	done
+}
+
 src_install () {
-	exeinto "/usr/sbin"
-	doexe display_detect.sh
-	doexe display_hotplug.sh
-	insinto "/lib/udev/rules.d"
-	doins 95-display-hotplug.rules
+	insinto /lib/udev/rules.d
+	newins 95-display-hotplug.rules
+	# RULE
+	insinto /usr/local/bin
+
 }
