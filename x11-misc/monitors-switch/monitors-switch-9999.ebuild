@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit savedconfig git-r3
+inherit savedconfig git-r3 udev
 
 DESCRIPTION="A basic script to detect when monitors are connected
 while the laptop is connected to a specific network."
@@ -39,9 +39,11 @@ src_prepare () {
 }
 
 src_install () {
-	insinto /lib/udev/rules.d
-	doins 95-display-hotplug.rules
+	udev_dorules 95-display-hotplug.rules
+
 	insinto /usr
 	dosbin display_detect.sh
 	dosbin display_hotplug.sh
+
+	udev_reload
 }
