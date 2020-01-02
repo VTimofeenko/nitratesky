@@ -39,7 +39,7 @@ src_prepare () {
 
 src_install () {
 	insinto /lib/udev/rules.d
-	newins 95-display-hotplug.rules
+	newins 95-display-hotplug.rules 95-display-hotplug.rules
 	# RULE
 	insinto /usr/local/bin
 
