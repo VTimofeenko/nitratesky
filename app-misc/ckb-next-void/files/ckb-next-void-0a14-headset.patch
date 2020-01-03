@@ -1,24 +1,27 @@
-This patch is based on discussion in https://github.com/ckb-next/ckb-next/issues/81
 diff --git a/src/daemon/usb.h b/src/daemon/usb.h
-index a54af72..8982a0f 100644
+index a54af72..fc3bc0b 100644
 --- a/src/daemon/usb.h
 +++ b/src/daemon/usb.h
-@@ -116,7 +116,8 @@
+@@ -115,7 +115,7 @@
+ 
  #define P_VOID_USB_1         0x1b29
  #define P_VOID_USB_2         0x1b2a
- #define P_VOID_WIRELESS_1    0x1b27
--#define IS_VOID(kb)          ((kb)->vendor == V_CORSAIR && ((kb)->product == P_VOID_USB_1 || (kb)->product == P_VOID_USB_2 || (kb)->product == P_VOID_WIRELESS_1))
-+#define P_VOID_WIRELESS_2    0x0a14
-+#define IS_VOID(kb)          ((kb)->vendor == V_CORSAIR && ((kb)->product == P_VOID_USB_1 || (kb)->product == P_VOID_USB_2 || (kb)->product == P_VOID_WIRELESS_1 || (kb)->product == P_VOID_WIRELESS_2 ))
+-#define P_VOID_WIRELESS_1    0x1b27
++#define P_VOID_WIRELESS_1    0x0a14
+ #define IS_VOID(kb)          ((kb)->vendor == V_CORSAIR && ((kb)->product == P_VOID_USB_1 || (kb)->product == P_VOID_USB_2 || (kb)->product == P_VOID_WIRELESS_1))
  
  #define N_MODELS 40
- extern ushort models[];
-@@ -215,7 +216,7 @@ const char* product_str(short product);
+@@ -215,11 +215,11 @@ const char* product_str(short product);
  #define IS_MOUSEPAD_DEV(kb)             IS_MOUSEPAD((kb)->vendor, (kb)->product)
  
  // Headset test
 -#define IS_HEADSET(vendor, product)     ((vendor) == (V_CORSAIR) && (product == P_VOID_USB_1 || product == P_VOID_USB_2))
-+#define IS_HEADSET(vendor, product)     ((vendor) == (V_CORSAIR) && (product == P_VOID_USB_1 || product == P_VOID_USB_2 || product == P_VOID_WIRELESS_2))
++#define IS_HEADSET(vendor, product)     ((vendor) == (V_CORSAIR) && (product == P_VOID_USB_1 || product == P_VOID_USB_2 || product == P_VOID_WIRELESS_1))
  #define IS_HEADSET_DEV(kb)              IS_HEADSET((kb)->vendor, (kb)->product)
  
  #define USB_DELAY_DEFAULT   5
+-        
++
+ /// Start the USB main loop. Returns program exit code when finished
+ int usbmain();
+ 
