@@ -37,3 +37,7 @@ A small utility that allows sending desktop notifications to the currently logge
 ## `app-misc/tg-notify`
 
 A script that alerts user via Telegram using curl. Based on [this](https://gist.github.com/SabbathHex/bb2725beb6f321c4c065055deca8bacd) gist.
+
+## `app-misc/ckb-next-void`
+
+Patched version of [ckb-next](https://github.com/ckb-next/ckb-next) that works with Corsair wireless device `1b1c:0a14`. Includes useflags related to GUI and animations, but they are untested.

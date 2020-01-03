@@ -1,0 +1,13 @@
+diff --git a/src/daemon/CMakeLists.txt b/src/daemon/CMakeLists.txt
+index e0d16f0..42d4cc7 100644
+--- a/src/daemon/CMakeLists.txt
++++ b/src/daemon/CMakeLists.txt
+@@ -458,7 +458,7 @@ endif ()
+ if (LINUX)
+   install(
+     FILES "${CMAKE_SOURCE_DIR}/linux/udev/99-ckb-daemon.rules"
+-    DESTINATION "/etc/udev/rules.d"
++    DESTINATION "/lib/udev/rules.d"
+     PERMISSIONS
+     OWNER_READ OWNER_WRITE
+     GROUP_READ

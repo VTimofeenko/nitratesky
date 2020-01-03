@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer>
+	<email>9886026+SabbathHex@users.noreply.github.com</email>
+</maintainer>
+<use>
+	<flag name='0a14'>Applied patch for Void 0a14 device</flag>
+	<flag name='qt'>Enables GUI and depencies on qt</flag>
+	<flag name='animations'>Enables animations</flag>
+	<flag name='bundled_quazip'>Enables bundled quazip, off by default</flag>
+</use>
+</pkgmetadata>
+

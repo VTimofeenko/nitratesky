@@ -1,0 +1,29 @@
+diff --git a/src/libs/CMakeLists.txt b/src/libs/CMakeLists.txt
+index f5b7df4..2f1338c 100644
+--- a/src/libs/CMakeLists.txt
++++ b/src/libs/CMakeLists.txt
+@@ -29,14 +29,16 @@ if (WITH_MVIZ) # otherwise doesn't make sense to include
+     add_subdirectory(kissfft)
+ endif ()
+
+-find_package(QuaZip)
+-if(NOT QuaZip_FOUND)
+-    set(WITH_SHIPPED_QUAZIP ON)
+-    set(WITH_SHIPPED_QUAZIP ON PARENT_SCOPE)
+-    message(WARNING "Quazip was not found. Using bundled version.")
+-endif ()
+-if (WITH_SHIPPED_QUAZIP)
+-    add_subdirectory(quazip)
++if (WITH_GUI)
++	find_package(QuaZip)
++	if(NOT QuaZip_FOUND)
++		set(WITH_SHIPPED_QUAZIP ON)
++		set(WITH_SHIPPED_QUAZIP ON PARENT_SCOPE)
++		message(WARNING "Quazip was not found. Using bundled version.")
++	endif ()
++	if (WITH_SHIPPED_QUAZIP)
++		add_subdirectory(quazip)
++	endif ()
+ endif ()
+
+ # ckb-next libraries
