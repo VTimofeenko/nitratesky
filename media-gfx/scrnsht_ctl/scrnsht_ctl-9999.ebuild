@@ -25,6 +25,7 @@ media-gfx/maim
 x11-libs/libnotify
 >=x11-apps/xrandr-1.5.1
 >=x11-misc/xdotool-3.20160805.1
+>=x11-misc/xclip-0.13
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
