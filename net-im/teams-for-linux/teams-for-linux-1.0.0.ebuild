@@ -14,6 +14,18 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 IUSE="firejail"
+DEPEND="
+net-print/cups
+x11-libs/gtk+
+x11-libs/libX11
+x11-libs/libXau
+sys-libs/zlib
+x11-libs/pango
+x11-libs/pixman
+app-accessibility/at-spi2-atk
+media-gfx/graphite2
+net-dns/libidn2
+"
 RDEPEND="firejail? ( >=sys-apps/firejail-0.9.50 )"
 
 src_prepare() {
