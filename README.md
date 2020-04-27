@@ -30,6 +30,12 @@ Small set of utilities that automatically sets the screens positions based on Wi
 
 A small utility that allows sending desktop notifications to the currently logged in user from root user. Uses `savedconfig` configuration for setting the user and their user ID, see `files` directory inside the ebuild folder.
 
+## `x11-misc/dmenu2`
+
+Fork of original dmenu with many patches applied and additional functionality. ([source repository](https://bitbucket.org/melek/dmenu2/src/default/))
+
+This version is additionally patched to conform with [Gentoo directory structure](https://devmanual.gentoo.org/general-concepts/filesystem/index.html).
+
 ## `app-misc/tg-notify`
 
 A script that alerts user via Telegram using curl. Based on [this](https://gist.github.com/SabbathHex/bb2725beb6f321c4c065055deca8bacd) gist.
