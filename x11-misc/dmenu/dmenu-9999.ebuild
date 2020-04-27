@@ -47,5 +47,5 @@ src_prepare() {
 	eapply_user
 }
 src_install() {
-	emake install
+	emake PREFIX="/usr" install DESTDIR=${D}
 }
