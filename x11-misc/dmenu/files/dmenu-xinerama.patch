@@ -1,12 +1,14 @@
 diff -r 36cb94a16edf config.mk
 --- a/config.mk Tue Jul 08 20:02:47 2014 +0100
-+++ b/config.mk Mon Apr 27 08:50:45 2020 -0700
-@@ -2,7 +2,7 @@
- VERSION = 0.1
++++ b/config.mk Mon Apr 27 09:15:18 2020 -0700
+@@ -9,8 +9,8 @@
+ X11LIB = /usr/X11R6/lib
 
- # paths
--PREFIX = /usr/local
-+PREFIX = /usr/bin
- MANPREFIX = ${PREFIX}/share/man
+ # Xinerama, comment if you don't want it
+-XINERAMALIBS  = -lXinerama
+-XINERAMAFLAGS = -DXINERAMA
++# XINERAMALIBS  = -lXinerama
++# XINERAMAFLAGS = -DXINERAMA
 
- X11INC = /usr/X11R6/include
+ # Xft, comment if you don't want it
+ XFTINC = -I/usr/include/freetype2
