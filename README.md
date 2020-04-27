@@ -30,7 +30,9 @@ Small set of utilities that automatically sets the screens positions based on Wi
 
 A small utility that allows sending desktop notifications to the currently logged in user from root user. Uses `savedconfig` configuration for setting the user and their user ID, see `files` directory inside the ebuild folder.
 
-## `x11-misc/dmenu2`
+## `x11-misc/dmenu`
+
+**Note**: this package is called "dmenu2". Currently packages in Gentoo standard repository have hard dependency on standard `x11-misc/dmenu`. In order to install this package, one from default repo needs to be masked and the one from this repository — unmasked.
 
 Fork of original dmenu with many patches applied and additional functionality. ([source repository](https://bitbucket.org/melek/dmenu2/src/default/))
 

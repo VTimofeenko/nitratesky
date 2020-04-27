@@ -25,7 +25,6 @@ media-libs/fontconfig
 x11-libs/libX11
 xft? ( x11-libs/libXft )
 xinerama? ( x11-libs/libXinerama )
-!!x11-misc/dmenu
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
