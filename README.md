@@ -45,3 +45,7 @@ A script that alerts user via Telegram using curl. Based on [this](https://gist.
 ## `app-misc/ckb-next-void`
 
 Patched version of [ckb-next](https://github.com/ckb-next/ckb-next) that works with Corsair wireless device `1b1c:0a14`. Includes useflags related to GUI and animations, but they are untested.
+
+## `app-misc/headsetcontrol`
+
+[HeadsetControl](https://github.com/Sapd/HeadsetControl), an application to control various headsets.
