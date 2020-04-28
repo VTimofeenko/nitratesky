@@ -38,6 +38,10 @@ Fork of original dmenu with many patches applied and additional functionality. (
 
 This version is additionally patched to conform with [Gentoo directory structure](https://devmanual.gentoo.org/general-concepts/filesystem/index.html).
 
+## `x11-misc/SH-wm-scripts`
+
+A collection of scripts to be used with tmux, i3 and i3blocks
+
 ## `app-misc/tg-notify`
 
 A script that alerts user via Telegram using curl. Based on [this](https://gist.github.com/SabbathHex/bb2725beb6f321c4c065055deca8bacd) gist.
