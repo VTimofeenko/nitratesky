@@ -34,7 +34,7 @@ src_install () {
 	dodir "${base_dir}"
 	for _dir in "i3blocks" "i3-helpers"; do
 		dodir "${base_dir}/${_dir}"
-		exeinto "${base_dir}/i3blocks"
+		exeinto "${base_dir}/${_dir}"
 		for file in $(ls ${_dir}/); do
 			doexe "${_dir}/$file"
 		done
