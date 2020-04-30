@@ -22,6 +22,9 @@ sensors? ( sys-apps/lm-sensors )
 pulsemixer? ( media-sound/pulsemixer )
 pavucontrol? ( media-sound/pavucontrol )
 headsetcontrol? ( app-misc/headsetcontrol )
+j4? ( x11-misc/j4-dmenu-desktop )
+screenshot? ( media-gfx/maim )
+shortcuts? ( x11-misc/xvkbd )
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
@@ -29,10 +32,12 @@ BDEPEND=""
 src_install () {
 	base_dir="usr/libexec/SH-wm-scripts"
 	dodir "${base_dir}"
-	dodir "${base_dir}/i3blocks"
-	exeinto "${base_dir}/i3blocks"
-	for file in $(ls i3blocks/); do
-		doexe "i3blocks/$file"
+	for _dir in "i3blocks" "i3-helpers"; do
+		dodir "${base_dir}/${_dir}"
+		exeinto "${base_dir}/i3blocks"
+		for file in $(ls ${_dir}/); do
+			doexe "${_dir}/$file"
+		done
 	done
 }
 
