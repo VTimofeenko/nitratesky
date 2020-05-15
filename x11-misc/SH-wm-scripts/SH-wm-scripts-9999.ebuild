@@ -32,7 +32,7 @@ BDEPEND=""
 src_install () {
 	base_dir="usr/libexec/SH-wm-scripts"
 	dodir "${base_dir}"
-	for _dir in "i3blocks" "i3-helpers"; do
+	for _dir in "i3blocks" "i3-helpers" "tmux"; do
 		dodir "${base_dir}/${_dir}"
 		exeinto "${base_dir}/${_dir}"
 		for file in $(ls ${_dir}/); do
