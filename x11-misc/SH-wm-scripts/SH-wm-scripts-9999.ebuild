@@ -25,6 +25,8 @@ headsetcontrol? ( app-misc/headsetcontrol )
 j4? ( x11-misc/j4-dmenu-desktop )
 maim? ( media-gfx/maim )
 shortcuts? ( x11-misc/xvkbd )
+x11-misc/xkblayout-state
+x11-misc/dunst
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
