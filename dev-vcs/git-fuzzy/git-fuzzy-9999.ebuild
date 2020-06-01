@@ -40,7 +40,7 @@ src_prepare() {
 src_install() {
 	dobin bin/git-fuzzy
 	insinto "${EPREFIX}/usr/share/${PN}"
-	doins -r lib/modules/*
+	doins -r lib/*
 }
 
 pkg_postinst() {
