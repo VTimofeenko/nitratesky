@@ -1,0 +1,13 @@
+diff --git a/bin/git-fuzzy b/bin/git-fuzzy
+index a6fc2e2..a7b2b19 100755
+--- a/bin/git-fuzzy
++++ b/bin/git-fuzzy
+@@ -19,7 +19,7 @@ script_dir="$( cd -P "$( dirname "$script_source" )" >/dev/null 2>&1 && pwd )"
+ 
+ # NB: all sourcing happens here.
+ # -----------------------------------------
+-lib_dir="$script_dir/../lib"
++lib_dir="/usr/share/git-fuzzy"
+ 
+ . "$lib_dir/load-configs.sh"
+ 

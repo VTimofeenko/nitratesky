@@ -53,3 +53,7 @@ Patched version of [ckb-next](https://github.com/ckb-next/ckb-next) that works w
 ## `app-misc/headsetcontrol`
 
 [HeadsetControl](https://github.com/Sapd/HeadsetControl), an application to control various headsets.
+
+## `dev-vcs/git-fuzzy`
+
+[Git-fuzzy](https://github.com/bigH/git-fuzzy), git + fzf integration
