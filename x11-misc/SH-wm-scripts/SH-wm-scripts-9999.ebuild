@@ -13,7 +13,7 @@ EGIT_REPO_URI="https://github.com/SabbathHex/wm-scripts"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="libvirt sensors pulsemixer pavucontrol headsetcontrol j4 maim shortcuts"
+IUSE="libvirt sensors pulsemixer pavucontrol headsetcontrol j4 maim shortcuts todo"
 
 # It is not strictly necessary to use i3blocks with this package, so it's not in the DEPEND
 DEPEND="
@@ -25,6 +25,7 @@ headsetcontrol? ( app-misc/headsetcontrol )
 j4? ( x11-misc/j4-dmenu-desktop )
 maim? ( media-gfx/maim )
 shortcuts? ( x11-misc/xvkbd )
+todo? ( app-office/todoman )
 x11-misc/xkblayout-state
 x11-misc/dunst
 "
