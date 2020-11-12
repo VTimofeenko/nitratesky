@@ -21,9 +21,8 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_unpack() {
-	# overriding the src_unpack to account for the script being in the open
 	mkdir "${WORKDIR}/${P}"
-	cp "${DISTDIR}/root-notify-send" "${WORKDIR}/${P}/root-notify-send"
+	cp "${FILESDIR}/root-notify-send" "${WORKDIR}/${P}/root-notify-send"
 }
 
 src_prepare() {
