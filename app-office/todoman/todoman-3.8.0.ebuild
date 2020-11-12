@@ -32,7 +32,6 @@ RDEPEND=">=dev-python/click-7.1[${PYTHON_USEDEP}]
 	dev-python/pyxdg[${PYTHON_USEDEP}]
 	dev-python/tabulate[${PYTHON_USEDEP}]
 	dev-python/urwid[${PYTHON_USEDEP}]
-	zsh-completion? ( app-shells/gentoo-zsh-completions )
 "
 BDEPEND="${RDEPEND}
 	dev-python/setuptools_scm[${PYTHON_USEDEP}]"
