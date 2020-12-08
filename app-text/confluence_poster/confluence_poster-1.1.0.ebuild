@@ -24,6 +24,7 @@ RDEPEND="
 >=dev-python/atlassian-python-api-1.17.6[${PYTHON_USEDEP}]
 dev-python/requests[${PYTHON_USEDEP}]
 dev-python/toml[${PYTHON_USEDEP}]
+zsh-completion? ( app-shells/zsh )
 "
 BDEPEND="${RDEPEND}"
 
