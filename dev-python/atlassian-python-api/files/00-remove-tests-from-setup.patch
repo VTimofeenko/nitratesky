@@ -1,0 +1,14 @@
+This patch fixes "Package installs 'tests' package which is forbidden and likely a bug in the build system." error by explicitly removing tests directory from install script
+diff --git a/setup.py b/setup.py
+index ec539bb..c58b315 100644
+--- a/setup.py
++++ b/setup.py
+@@ -22,7 +22,7 @@ setup(
+     url='https://github.com/atlassian-api/atlassian-python-api',
+     keywords='atlassian jira core software confluence bitbucket bamboo crowd portfolio tempo servicedesk rest api',
+ 
+-    packages=find_packages(),
++    packages=find_packages(exclude=['tests*']),
+     package_dir={'atlassian': 'atlassian'},
+     include_package_data=True,
+ 
