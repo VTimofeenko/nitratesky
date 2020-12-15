@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<maintainer>
-	<email>9886026+SabbathHex@users.noreply.github.com</email>
+<maintainer type="person">
+	<email>overlay.maintain@vtimofeenko.com</email>
+	<description>Nitratesky Gentoo overlay</description>
 </maintainer>
 <use>
-	<flag name='root-notify-send'>Adds <pkg>root-notify-send</pkg> integration</flag>
+	<flag name='root-notify-send'>Allows sending notification as root to the currently logged in user</flag>
 </use>
 </pkgmetadata>
 

@@ -1,13 +1,11 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 inherit git-r3
 
-DESCRIPTION="This program allows you read and control device brightness.
-Devices, by default, include backlight and LEDs (searched for in corresponding classes).
-If omitted, the first found device is selected."
+DESCRIPTION="This program allows you read and control device brightness."
 HOMEPAGE="https://github.com/Hummer12007/brightnessctl"
 SRC_URI=""
 EGIT_REPO_URI="https://github.com/Hummer12007/brightnessctl"
@@ -17,7 +15,6 @@ if [[ ${PV} = 9999 ]] ; then
 else
 	EGIT_COMMIT="${PV}"
 fi
-
 
 LICENSE="MIT"
 SLOT="0"
@@ -38,6 +35,5 @@ src_install() {
 		myconf="${myconf} INSTALL_UDEV_RULES=0"
 	fi
 
-	emake install ${myconf} DESTDIR=${D}
-
+	emake install ${myconf} DESTDIR="${D}"
 }

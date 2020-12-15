@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -30,7 +30,6 @@ RDEPEND="firejail? ( >=sys-apps/firejail-0.9.50 )"
 
 src_prepare() {
 	PATCHES=(
-		"${FILESDIR}/${PN}-add-icons.patch"
 		"${FILESDIR}/${PN}-add-startup-script.patch"
 	)
 	if use firejail; then
@@ -46,9 +45,9 @@ src_install() {
 	local res
 	# 1024 is unsupported
 	for res in  128 16 24 256 32 48 512 64 96 ; do
-		newicon -s ${res} ebuild_assets/icons/${res}x${res}.png ${PN}.png
+		newicon -s ${res} "${FILESDIR}/icons/${res}x${res}.png" ${PN}.png
 	done
-	doicon ebuild_assets/icons/teams-for-linux.png
+	doicon "${FILESDIR}/icons/teams-for-linux.png"
 
 	dobin ebuild_assets/${PN}
 	make_desktop_entry /opt/${PN}/${PN} "Teams for Linux" teams-for-linux
@@ -56,7 +55,6 @@ src_install() {
 		make_desktop_entry "firejail --profile=/opt/${PN}/ebuild_assets/firejail/${PN}.profile /opt/${PN}/${PN}" "[FJ] Teams for Linux" teams-for-linux
 	fi
 }
-
 
 pkg_postinst() {
 	einfo "1024x1024 icon is not installed, since that size is not supported by portage."

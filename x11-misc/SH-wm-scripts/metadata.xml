@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+	<email>overlay.maintain@vtimofeenko.com</email>
+	<description>Nitratesky Gentoo overlay</description>
+</maintainer>
+<use>
+	<flag name='libvirt'>Enables block that shows VM status</flag>
+	<flag name='sensors'>Adds temperature block</flag>
+	<flag name='pulsemixer'>Allows launching pulsemixer from volume block</flag>
+	<flag name='pavucontrol'>Allows launching pavucontrol from volume block</flag>
+	<flag name='headsetcontrol'>Adds headset control block</flag>
+	<flag name='shortcuts'>Allows using xvkbd shortcuts</flag>
+	<flag name='todo'>Adds todoman integration to display remaining todos</flag>
+</use>
+</pkgmetadata>
+

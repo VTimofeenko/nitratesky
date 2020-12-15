@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<maintainer>
-	<email>9886026+SabbathHex@users.noreply.github.com</email>
+<maintainer type="person">
+	<email>overlay.maintain@vtimofeenko.com</email>
+	<description>Nitratesky Gentoo overlay</description>
 </maintainer>
 <use>
-	<flag name='firejail'>Patches the installed package with firejail profile. 
+	<flag name='firejail'>Patches the installed package with firejail profile.
 		If enabled - adds dependency for <pkg>sys-apps/firejail</pkg></flag>
 </use>
 </pkgmetadata>

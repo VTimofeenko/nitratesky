@@ -3,13 +3,12 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{8,9} )
+PYTHON_COMPAT=( python3_8 )
 DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit distutils-r1 bash-completion-r1
 
-DESCRIPTION="Supplementary script for writing confluence wiki articles in vim.
-Capable of alerting in case name of the last author is not the same one as in config so as to prevent collisions in versions."
+DESCRIPTION="Supplementary script for posting confluence wiki articles from vim."
 HOMEPAGE="https://pypi.org/project/confluence-poster/"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
@@ -26,7 +25,7 @@ dev-python/requests[${PYTHON_USEDEP}]
 dev-python/toml[${PYTHON_USEDEP}]
 zsh-completion? ( app-shells/zsh )
 "
-BDEPEND="${RDEPEND}"
+BDEPEND=""
 
 DOCS=( README.md config.toml )
 

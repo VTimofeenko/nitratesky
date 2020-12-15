@@ -1,17 +1,16 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 inherit savedconfig git-r3 udev
 
-DESCRIPTION="A basic script to detect when monitors are connected
-while the laptop is connected to a specific network."
-HOMEPAGE="https://github.com/SabbathHex/monitors-switch"
+DESCRIPTION="A basic script to switch monitors when connected to specific network"
+HOMEPAGE="https://github.com/VTimofeenko/monitors-switch"
 SRC_URI=""
-EGIT_REPO_URI="https://github.com/SabbathHex/monitors-switch"
+EGIT_REPO_URI="https://github.com/VTimofeenko/monitors-switch"
 
-LICENSE=""
+LICENSE="WTFPL"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="root-notify-send +savedconfig"

@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -6,14 +6,14 @@ EAPI=7
 inherit git-r3
 
 DESCRIPTION="This is a collection of scripts to be used with tmux, i3-gaps and i3blocks."
-HOMEPAGE="https://github.com/SabbathHex/wm-scripts"
+HOMEPAGE="https://github.com/VTimofeenko/wm-scripts"
 SRC_URI=""
-EGIT_REPO_URI="https://github.com/SabbathHex/wm-scripts"
+EGIT_REPO_URI="https://github.com/VTimofeenko/wm-scripts"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64 x86"
-IUSE="libvirt sensors pulsemixer pavucontrol headsetcontrol j4 maim shortcuts todo"
+KEYWORDS="~amd64 ~x86"
+IUSE="libvirt sensors pulsemixer pavucontrol headsetcontrol shortcuts todo"
 
 # It is not strictly necessary to use i3blocks with this package, so it's not in the DEPEND
 DEPEND="
@@ -22,8 +22,6 @@ sensors? ( sys-apps/lm-sensors )
 pulsemixer? ( media-sound/pulsemixer )
 pavucontrol? ( media-sound/pavucontrol )
 headsetcontrol? ( app-misc/headsetcontrol )
-j4? ( x11-misc/j4-dmenu-desktop )
-maim? ( media-gfx/maim )
 shortcuts? ( x11-misc/xvkbd )
 todo? ( app-office/todoman )
 x11-misc/xkblayout-state
