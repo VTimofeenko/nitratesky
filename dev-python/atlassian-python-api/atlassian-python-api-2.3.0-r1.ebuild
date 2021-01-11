@@ -25,5 +25,5 @@ dev-python/pykerberos[${PYTHON_USEDEP}]
 "
 
 PATCHES=(
-	"${FILESDIR}/00-remove-tests-from-setup.patch"
+	"${FILESDIR}/remove-tests-from-setup-${PV}.patch"
 )
