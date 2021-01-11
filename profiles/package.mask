@@ -1,4 +1,4 @@
 # Collides with pyxdg
 =dev-python/xdg-5.0.1
 # Requires dev-python/xdg which collides with pyxdg
-==app-text/confluence-poster-1.4.0
+=app-text/confluence-poster-1.4.0
