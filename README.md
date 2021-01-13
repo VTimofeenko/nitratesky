@@ -34,6 +34,10 @@ Supplementary script for writing Confluence wiki articles in vim. Uses informati
 
 Write email in markdown, and convert to multipart MIME that works impeccably in graphical and console mail clients.
 
+## [`app-portage/portage-record-patch`](https://github.com/VTimofeenko/portage-record-patch)
+
+Small utility that automates the steps from [Gentoo Wiki to create quick patches](https://wiki.gentoo.org/wiki/Patches). On the first run it will prompt to create a git repo in the WORKDIR of unpacked package. On subsequent runs it will record the changes to the unpacked package in `/etc/portage/patches/<category>/<package_name>/`
+
 ## `dev-python/atlassian-python-api`
 
 Python API framework for Atlassian products (Jira, Confluence, etc). Dependency of confluence_poster
@@ -58,9 +62,9 @@ A simple screenshot ctl wrapper([source](https://gist.github.com/VTimofeenko/879
 
 Small set of utilities that automatically sets the screens positions based on WiFi network the machine is currently connected to. See the [separate repo](https://github.com/VTimofeenko/monitors-switch) for more details.
 
-## `x11-misc/root-notify-send`
+## [`x11-misc/root-notify-send`]()
 
-A small utility that allows sending desktop notifications to the currently logged in user from root user. Uses `savedconfig` configuration for setting the user and their user ID, see `files` directory inside the ebuild folder.
+A small utility that allows sending desktop notifications to the currently logged in users from root user. Has `dunstify` use flag which replaces `notify-send` with [`dunstify`](https://github.com/dunst-project/dunst).
 
 ## `x11-misc/SH-wm-scripts`
 
