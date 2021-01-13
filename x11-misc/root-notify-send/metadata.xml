@@ -6,5 +6,6 @@
 	<description>Nitratesky Gentoo overlay</description>
 </maintainer>
 <use>
+	<flag name="dunstify">Replaces notify-send with dunstify</flag>
 </use>
 </pkgmetadata>

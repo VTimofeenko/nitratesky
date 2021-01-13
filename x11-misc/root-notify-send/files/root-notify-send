@@ -1,6 +1,0 @@
-#!/bin/sh
-# This script allows calling notify-send as root for it to appear on ${USERNAME}'s desktop
-
-WM_PROCESS=$(pgrep --exact --uid ${UID} "${WM_NAME}")
-DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/"${WM_PROCESS}"/environ|cut -d= -f2- | tr -d '\0')
-sudo -u ${USERNAME} DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS="${DBUS_SESSION_BUS_ADDRESS}" notify-send "$@"
