@@ -38,6 +38,10 @@ Write email in markdown, and convert to multipart MIME that works impeccably in 
 
 Small utility that automates the steps from [Gentoo Wiki to create quick patches](https://wiki.gentoo.org/wiki/Patches). On the first run it will prompt to create a git repo in the WORKDIR of unpacked package. On subsequent runs it will record the changes to the unpacked package in `/etc/portage/patches/<category>/<package_name>/`
 
+## [`app-shells/zsh-async`](https://github.com/mafredri/zsh-async)
+
+A plugin for zsh that allows invoking scripts asynchronously.
+
 ## `dev-python/atlassian-python-api`
 
 Python API framework for Atlassian products (Jira, Confluence, etc). Dependency of confluence_poster
