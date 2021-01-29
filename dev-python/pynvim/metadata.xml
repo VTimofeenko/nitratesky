@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">Pynvim implements support for python plugins in Nvim. It also works as a library for connecting to and scripting Nvim processes through its msgpack-rpc API.
+
+	Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am testing its interaction with binpkgs before submitting a pull request.
+	</longdescription>
+	<stabilize-allarches/>
+	<upstream>
+		<remote-id type="github">neovim/pynvim</remote-id>
+		<remote-id type="pypi">pynvim</remote-id>
+	</upstream>
+</pkgmetadata>
