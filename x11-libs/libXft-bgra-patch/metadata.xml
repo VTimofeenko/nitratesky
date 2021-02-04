@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<use>
+	</use>
+	<longdescription lang="en">This is a patch file for enabling BGRA glyphs (emojis) support in libXft. Installs as a single patch file into /etc/portage/. The patch file was taken from https://gitlab.freedesktop.org/xorg/lib/libxft/-/merge_requests/1
+	</longdescription>
+</pkgmetadata>
+
