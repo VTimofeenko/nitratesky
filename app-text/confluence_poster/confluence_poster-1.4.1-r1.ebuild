@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -38,9 +38,9 @@ src_install() {
 
 	if use zsh-completion; then
 		insinto /usr/share/zsh/site-functions
-		doins "${WORKDIR}/${P}/contrib/completions/zsh/_confluence_poster"
+		doins "${FILESDIR}/completions/zsh/_confluence_poster"
 	fi
 	if use bash-completion; then
-		dobashcomp "${WORKDIR}/${P}/contrib/completions/bash/_confluence_poster"
+		dobashcomp "${FILESDIR}/completions/bash/_confluence_poster"
 	fi
 }
