@@ -2,6 +2,29 @@
 
 This is a repository for the ebuilds that I wrote and attempt to maintain.
 
+# Installation
+
+You can use `eselect repository enable nitratesky` to add this repo.
+
+Alternatively, you can add the following to your `/etc/portage/repos.conf`:
+
+
+    [nitratesky]
+
+    location = /var/db/repos/nitratesky
+    sync-type = git
+    sync-uri = https://github.com/VTimofeenko/nitratesky
+    priority = 50
+    auto-sync = yes
+    sync-depth = 1
+    clone-depth = 1
+    # Optional, requires app-crypt/openpgp-keys-vtimofeenko key installed.
+    # Note: eselect repository gets the overlay from a mirror with unsigned action commits
+    # done by a bot, so this will not work.
+    #sync-git-verify-commit-signature = yes
+    #sync-openpgp-key-path = /usr/share/openpgp-keys/pubkey_id_vtimofeenko.asc
+
+
 # Contents
 
 ## `app-misc/brightnessctl`
