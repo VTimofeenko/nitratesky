@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<use>
+	</use>
+	<longdescription lang="en">
+	A set of utils to generate README for Gentoo overlays and
+	look up available versions in remote overlays.
+	</longdescription>
+	<upstream>
+		<maintainer>
+			<email>overlay.tools.maintain@vtimofeenko.com</email>
+			<name>Vladimir Timofeenko</name>
+		</maintainer>
+		<bugs-to>https://github.com/VTimofeenko/overlay-maintain-tools/issues</bugs-to>
+		<remote-id type="github">VTimofeenko/overlay-maintain-tools</remote-id>
+		<remote-id type="pypi">overlay-maintain-tools</remote-id>
+	</upstream>
+</pkgmetadata>
+
