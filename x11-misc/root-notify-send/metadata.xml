@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<maintainer type="person">
-	<email>overlay.maintain@vtimofeenko.com</email>
-	<description>Nitratesky Gentoo overlay</description>
-</maintainer>
-<use>
-	<flag name="dunstify">Replaces notify-send with dunstify</flag>
-</use>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">VTimofeenko/root-notify-send</remote-id>
+	</upstream>
+	<use>
+		<flag name="dunstify">Replaces notify-send with dunstify</flag>
+	</use>
 </pkgmetadata>

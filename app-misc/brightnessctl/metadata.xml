@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<maintainer type="person">
-	<email>overlay.maintain@vtimofeenko.com</email>
-	<description>Nitratesky Gentoo overlay</description>
-</maintainer>
-<use>
-</use>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">
+		This program allows you read and control device brightness. Devices, by default, include backlight and LEDs (searched for in corresponding classes). If omitted, the first found device is selected.
+
+It can also preserve current brightness before applying the operation (allowing for usecases like disabling backlight on lid close).
+	</longdescription>
+	<upstream>
+		<remote-id type="github">Hummer12007/brightnessctl</remote-id>
+	</upstream>
 </pkgmetadata>

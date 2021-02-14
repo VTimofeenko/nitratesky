@@ -24,77 +24,302 @@ Alternatively, you can add the following to your `/etc/portage/repos.conf`:
     #sync-git-verify-commit-signature = yes
     #sync-openpgp-key-path = /usr/share/openpgp-keys/pubkey_id_vtimofeenko.asc
 
+# Packages
 
-# Contents
+## app-misc/headsetcontrol
 
-## `app-misc/brightnessctl`
+**Versions available**:
+2.3, 9999
 
-Script to adjust display/led brightness ([source repository](https://github.com/Hummer12007/brightnessctl)).
+Remotes:
 
-**Important note**: there are two USE flags in this ebuild in the 9999 version — `systemd` and `udev`. If systemd is enabled — resulting binary is installed with suid, regardless of whether `udev` is enabled.
+* **GitHub**: [link](https://github.com/Sapd/HeadsetControl).
 
-## `app-misc/ckb-next-void`
+	Release: [![GitHub release](https://img.shields.io/github/release/Sapd/HeadsetControl.svg)](https://GitHub.com/Sapd/HeadsetControl/releases/)
 
-Patched version of [ckb-next](https://github.com/ckb-next/ckb-next) that works with Corsair wireless device `1b1c:0a14`. Includes useflags related to GUI and animations, but they are untested.
+Adds loopback and LED control to headsets
 
-## `app-misc/headsetcontrol`
+A tool to control certain aspects of USB-connected headsets on Linux. Currently, support is provided for adjusting sidetone, getting battery state, controlling LEDs, and setting the inactive time. See below for which headset supports which feature.
+## app-misc/tg-notify
 
-[HeadsetControl](https://github.com/Sapd/HeadsetControl), an application to control (LED, sidetone, battery reporting) various headsets.
+**Versions available**:
+9999
 
-## `app-misc/tg-notify`
+A _very_ primitive telegram notification mechanism
 
-A script that alerts user via Telegram using curl. Based on [this](https://gist.github.com/VTimofeenko/bb2725beb6f321c4c065055deca8bacd) gist.
 
-## `app-office/todoman`
+## app-misc/ckb-next-void
 
-[Todoman](https://github.com/pimutils/todoman) is a simple standards based cli todo manager.
+**Versions available**:
+0.1
 
-## [`app-text/confluence_poster`](https://github.com/VTimofeenko/confluence_poster)
+Based on ckb-next, provides patched version for specific device
 
-Supplementary script for writing Confluence wiki articles in vim. Uses information from config.toml to post the article content to confluence.
 
-## [`app-text/mimedown`](https://github.com/begriffs/mimedown)
+## app-misc/brightnessctl
 
-Write email in markdown, and convert to multipart MIME that works impeccably in graphical and console mail clients.
+**Versions available**:
+0.4, 9999
 
-## [`app-portage/portage-record-patch`](https://github.com/VTimofeenko/portage-record-patch)
+Remotes:
 
-Small utility that automates the steps from [Gentoo Wiki to create quick patches](https://wiki.gentoo.org/wiki/Patches). On the first run it will prompt to create a git repo in the WORKDIR of unpacked package. On subsequent runs it will record the changes to the unpacked package in `/etc/portage/patches/<category>/<package_name>/`
+* **GitHub**: [link](https://github.com/Hummer12007/brightnessctl).
 
-## [`app-shells/zsh-async`](https://github.com/mafredri/zsh-async)
+	Release: [![GitHub release](https://img.shields.io/github/release/Hummer12007/brightnessctl.svg)](https://GitHub.com/Hummer12007/brightnessctl/releases/)
 
-A plugin for zsh that allows invoking scripts asynchronously.
+This program allows you read and control device brightness.
 
-## `dev-python/atlassian-python-api`
+This program allows you read and control device brightness. Devices, by default, include backlight and LEDs (searched for in corresponding classes). If omitted, the first found device is selected.
+It can also preserve current brightness before applying the operation (allowing for usecases like disabling backlight on lid close).
+## app-shells/zsh-async
 
-Python API framework for Atlassian products (Jira, Confluence, etc). Dependency of confluence_poster
+**Versions available**:
+1.8.5, 9999
 
-## `dev-python/typer`
+Remotes:
 
-Python CLI framework
+* **GitHub**: [link](https://github.com/mafredri/zsh-async).
 
-## `dev-vcs/git-fuzzy`
+	Release: [![GitHub release](https://img.shields.io/github/release/mafredri/zsh-async.svg)](https://GitHub.com/mafredri/zsh-async/releases/)
 
-[Git-fuzzy](https://github.com/bigH/git-fuzzy), git + fzf integration
+Asynchronous jobs for ZSH
 
-## `media-gfx/scrnsht_ctl`
+With zsh-async you can run multiple asynchronous jobs, enforce unique jobs (multiple instances of the same job will not run), flush all currently running jobs and create multiple workers (each with their own jobs). For each worker you can register a callback-function through which you will be notified about the job results (job name, return code, output and execution time).
+## x11-libs/libXft-bgra-patch
 
-A simple screenshot ctl wrapper([source](https://gist.github.com/VTimofeenko/87940496bd6bb9eec7f397bfe2ffe411)) around maim to be used with the i3/sway window managers.
+**Versions available**:
+9999
 
-## `net-im/teams-for-linux`
+BGRA patch for libXft
 
-[Microsoft Teams for Linux](https://github.com/IsmaelMartinez/teams-for-linux), Electron-based client for Teams. This is based on the binary precompiled releases of that repository. As additional features — ebuild handles icon installations and .desktop files generation. As an additional feature, simple firejail profile is added which can be enabled by a separate useflag.
+This is a patch file for enabling BGRA glyphs (emojis) support in libXft. Installs as a single patch file into /etc/portage/. The patch file was taken from https://gitlab.freedesktop.org/xorg/lib/libxft/-/merge_requests/1
+## dev-python/typer
 
-## `x11-misc/monitors-switch`
+**Versions available**:
+0.3.2
 
-Small set of utilities that automatically sets the screens positions based on WiFi network the machine is currently connected to. See the [separate repo](https://github.com/VTimofeenko/monitors-switch) for more details.
+Remotes:
 
-## [`x11-misc/root-notify-send`]()
+* **GitHub**: [link](https://github.com/tiangolo/typer).
 
-A small utility that allows sending desktop notifications to the currently logged in users from root user. Has `dunstify` use flag which replaces `notify-send` with [`dunstify`](https://github.com/dunst-project/dunst).
+	Release: [![GitHub release](https://img.shields.io/github/release/tiangolo/typer.svg)](https://GitHub.com/tiangolo/typer/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/typer/).
 
-## `x11-misc/SH-wm-scripts`
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/typer.svg)](https://pypi.python.org/pypi/typer/) [![PyPI version shields.io](https://img.shields.io/pypi/v/typer.svg)](https://pypi.python.org/pypi/typer/)
 
-A collection of scripts to be used with tmux, i3 and i3blocks
+Typer, build great CLIs. Easy to code. Based on Python type hints.
+
+
+## dev-python/xdg
+
+**Versions available**:
+5.0.1
+
+Provides functions to return paths defined by XDG Base Directory Specification
+
+
+## dev-python/pynvim
+
+**Versions available**:
+0.4.2
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/neovim/pynvim).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/neovim/pynvim.svg)](https://GitHub.com/neovim/pynvim/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/pynvim/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/pynvim.svg)](https://pypi.python.org/pypi/pynvim/) [![PyPI version shields.io](https://img.shields.io/pypi/v/pynvim.svg)](https://pypi.python.org/pypi/pynvim/)
+
+Python client for Neovim
+
+Pynvim implements support for python plugins in Nvim. It also works as a library for connecting to and scripting Nvim processes through its msgpack-rpc API.
+Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am testing its interaction with binpkgs before submitting a pull request.
+## dev-python/atlassian-python-api
+
+**Versions available**:
+1.17.6, 2.3.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/atlassian-api/atlassian-python-api).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/atlassian-api/atlassian-python-api.svg)](https://GitHub.com/atlassian-api/atlassian-python-api/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/atlassian-python-api/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/atlassian-python-api.svg)](https://pypi.python.org/pypi/atlassian-python-api/) [![PyPI version shields.io](https://img.shields.io/pypi/v/atlassian-python-api.svg)](https://pypi.python.org/pypi/atlassian-python-api/)
+
+Provides a simple python interface for interacting with Atlassian products
+
+
+## app-office/todoman
+
+**Versions available**:
+3.8.0, 3.9.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/pimutils/todoman).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/pimutils/todoman.svg)](https://GitHub.com/pimutils/todoman/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/todoman/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/todoman.svg)](https://pypi.python.org/pypi/todoman/) [![PyPI version shields.io](https://img.shields.io/pypi/v/todoman.svg)](https://pypi.python.org/pypi/todoman/)
+
+Simple, standards-based, cli todo (aka: task) manager
+
+Todoman is a simple, standards-based, cli todo (aka: task) manager. Todos are stored into icalendar files, which means you can sync them via CalDAV using, for example, vdirsyncer.
+## dev-vcs/git-fuzzy
+
+**Versions available**:
+9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/bigH/git-fuzzy).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/bigH/git-fuzzy.svg)](https://GitHub.com/bigH/git-fuzzy/releases/)
+
+A CLI interface to git that relies heavily on fzf
+
+
+## media-gfx/scrnsht_ctl
+
+**Versions available**:
+9999
+
+A small ctl wrapper around main to be used in conjunction with i3/sway.
+
+
+## x11-misc/monitors-switch
+
+**Versions available**:
+9999
+
+A basic script to switch monitors when connected to specific network
+
+
+## x11-misc/root-notify-send
+
+**Versions available**:
+1.0.0, 1.1.0, 9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/VTimofeenko/root-notify-send).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/root-notify-send.svg)](https://GitHub.com/VTimofeenko/root-notify-send/releases/)
+
+Allows calling notify-send as root for it to appear on a user's desktop
+
+
+## x11-misc/SH-wm-scripts
+
+**Versions available**:
+9999
+
+This is a collection of scripts to be used with tmux, i3-gaps and i3blocks.
+
+
+## net-im/teams-for-linux
+
+**Versions available**:
+0.7.0, 1.0.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/IsmaelMartinez/teams-for-linux).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/IsmaelMartinez/teams-for-linux.svg)](https://GitHub.com/IsmaelMartinez/teams-for-linux/releases/)
+
+Microsoft Teams client for Linux. Binary precompiled version.
+
+
+## app-portage/git-verify-signature
+
+**Versions available**:
+1.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/VTimofeenko/git-verify-signature.eclass).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/git-verify-signature.eclass.svg)](https://GitHub.com/VTimofeenko/git-verify-signature.eclass/releases/)
+
+Eclass that may be used to verify the signature on the top commit
+
+This repo contains an eclass that may be used to verify the signature on the top commit of a repository checked out during git-r3 based ebuild installation.
+git-verify-signature.eclass is based on and exposes the same variables
+## app-portage/overlay-maintain-tools
+
+**Versions available**:
+1.0.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/VTimofeenko/overlay-maintain-tools).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/overlay-maintain-tools.svg)](https://GitHub.com/VTimofeenko/overlay-maintain-tools/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/overlay-maintain-tools/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/overlay-maintain-tools.svg)](https://pypi.python.org/pypi/overlay-maintain-tools/) [![PyPI version shields.io](https://img.shields.io/pypi/v/overlay-maintain-tools.svg)](https://pypi.python.org/pypi/overlay-maintain-tools/)
+
+Generates README and versions report for overlay
+
+A set of utils to generate README for Gentoo overlays and look up available versions in remote overlays.
+## app-portage/portage-record-patch
+
+**Versions available**:
+1.0.0, 1.1.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/VTimofeenko/portage-record-patch).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/portage-record-patch.svg)](https://GitHub.com/VTimofeenko/portage-record-patch/releases/)
+
+A small utility to write down user patches
+
+
+## app-text/mimedown
+
+**Versions available**:
+9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/begriffs/mimedown).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/begriffs/mimedown.svg)](https://GitHub.com/begriffs/mimedown/releases/)
+
+Write email in markdown, and convert to multipart MIME
+
+
+## app-text/confluence_poster
+
+**Versions available**:
+1.1.0, 1.4.0, 1.4.1, 1.4.2
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/VTimofeenko/confluence_poster).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/confluence_poster.svg)](https://GitHub.com/VTimofeenko/confluence_poster/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/confluence_poster/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/confluence_poster.svg)](https://pypi.python.org/pypi/confluence_poster/) [![PyPI version shields.io](https://img.shields.io/pypi/v/confluence_poster.svg)](https://pypi.python.org/pypi/confluence_poster/)
+
+Supplementary script for posting confluence wiki articles from vim.
+
+Supplementary script for writing Confluence articles in local editor.
+Uses information from the config to post the article content to Confluence.
+## app-crypt/openpgp-keys-vtimofeenko
+
+**Versions available**:
+20200204
+
+Public key of Vladimir Timofeenko
+
 
 

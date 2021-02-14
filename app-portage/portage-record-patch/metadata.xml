@@ -5,6 +5,9 @@
 	<email>overlay.maintain@vtimofeenko.com</email>
 	<description>Nitratesky Gentoo overlay</description>
 </maintainer>
+	<upstream>
+		<remote-id type="github">VTimofeenko/portage-record-patch</remote-id>
+	</upstream>
 <use>
 </use>
 </pkgmetadata>

@@ -1,0 +1,60 @@
+# What is this
+
+This is a repository for the ebuilds that I wrote and attempt to maintain.
+
+# Installation
+
+You can use `eselect repository enable nitratesky` to add this repo.
+
+Alternatively, you can add the following to your `/etc/portage/repos.conf`:
+
+
+    [nitratesky]
+
+    location = /var/db/repos/nitratesky
+    sync-type = git
+    sync-uri = https://github.com/VTimofeenko/nitratesky
+    priority = 50
+    auto-sync = yes
+    sync-depth = 1
+    clone-depth = 1
+    # Optional, requires app-crypt/openpgp-keys-vtimofeenko key installed.
+    # Note: eselect repository gets the overlay from a mirror with unsigned action commits
+    # done by a bot, so this will not work.
+    #sync-git-verify-commit-signature = yes
+    #sync-openpgp-key-path = /usr/share/openpgp-keys/pubkey_id_vtimofeenko.asc
+
+# Packages
+
+{% for package in packages %}
+## {{ package.atomname }}
+
+**Versions available**:
+{% for version in package.versions %}
+{{ version }}
+{%- if not loop.last %}
+, {% endif %}
+{% endfor %}
+
+{% if package.remotes %}
+
+Remotes:
+
+	{% for remote in package.remotes %}
+		{% if remote.type == "pypi" %}
+			{% set pypi_url = 'https://pypi.python.org/pypi/' ~ remote.target ~ '/' -%}
+			* **PyPI**: [link]({{ pypi_url }}).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/{{ remote.target }}.svg)]({{ pypi_url }}) [![PyPI version shields.io](https://img.shields.io/pypi/v/{{ remote.target }}.svg)]({{ pypi_url }})
+		{% elif remote.type == 'github' -%}
+			* **GitHub**: [link](https://github.com/{{ remote.target }}).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/{{ remote.target }}.svg)](https://GitHub.com/{{ remote.target }}/releases/)
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+{{ package.description }}
+
+{{ package.longdescription }}
+{% endfor %}
