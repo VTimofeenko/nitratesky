@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">
+		This repo contains an eclass that may be used to verify the signature on the top commit of a repository checked out during git-r3 based ebuild installation.
+
+git-verify-signature.eclass is based on and exposes the same variables
+	</longdescription>
+	<upstream>
+		<maintainer>
+			<email>overlay.maintain@vtimofeenko.com</email>
+			<name>Vladimir Timofeenko</name>
+		</maintainer>
+		<remote-id type="github">VTimofeenko/git-verify-signature.eclass</remote-id>
+	</upstream>
+</pkgmetadata>
+
