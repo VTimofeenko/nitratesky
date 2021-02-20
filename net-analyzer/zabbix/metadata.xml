@@ -10,6 +10,10 @@
 		ZABBIX supports both polling and trapping techniques to collect data from
 		monitored hosts. A flexible notification mechanism allows easy and quickly
 		configure different types of notifications for pre-defined events.
+
+		This version differs from main tree by adding agent2 use flag.
+
+		Bug #749351
 	</longdescription>
 	<use>
 		<flag name="agent">Enable zabbix agent (for to-be-monitored machines)</flag>
