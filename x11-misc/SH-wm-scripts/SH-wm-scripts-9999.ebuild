@@ -16,7 +16,7 @@ KEYWORDS=""
 IUSE="libvirt sensors pulsemixer pavucontrol headsetcontrol shortcuts todo verify-sig"
 
 # It is not strictly necessary to use i3blocks with this package, so it's not in the DEPEND
-DEPEND="
+RDEPEND="
 libvirt? ( app-emulation/libvirt )
 sensors? ( sys-apps/lm-sensors )
 pulsemixer? ( media-sound/pulsemixer )
@@ -27,8 +27,7 @@ todo? ( app-office/todoman )
 x11-misc/xkblayout-state
 >=x11-misc/dunst-1.5.0
 "
-RDEPEND="${DEPEND}"
-BDEPEND=""
+BDEPEND="verify-sig? ( app-crypt/openpgp-keys-vtimofeenko )"
 VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/pubkey_id_vtimofeenko.asc
 
 src_install () {
