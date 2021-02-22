@@ -246,6 +246,21 @@ ZABBIX is software for monitoring of your applications, network and servers
 ZABBIX is software for monitoring of your applications, network and servers. ZABBIX supports both polling and trapping techniques to collect data from monitored hosts. A flexible notification mechanism allows easy and quickly configure different types of notifications for pre-defined events.
 This version differs from main tree by adding agent2 use flag.
 Bug #749351
+## net-news/newsboat
+
+**Versions available**:
+2.22.1
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/newsboat/newsboat).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/newsboat/newsboat.svg)](https://GitHub.com/newsboat/newsboat/releases/)
+
+An RSS/Atom feed reader for text terminals
+
+Newsboat is an RSS/Atom feedreader. RSS and Atom are a number of widely-used XML formats to transmit, publish and syndicate articles, for example news or blog articles. Newsboat is designed to be used on text terminals on Unix or Unix-like systems such as GNU/Linux, FreeBSD or macOS.
+This version of newsboat package also verifies the release signature.
 ## app-portage/git-verify-signature
 
 **Versions available**:
@@ -330,6 +345,14 @@ Uses information from the config to post the article content to Confluence.
 20200204
 
 Public key of Vladimir Timofeenko
+
+
+## app-crypt/openpgp-keys-newsboat
+
+**Versions available**:
+20210221
+
+Public key of Newsboat release
 
 
 
