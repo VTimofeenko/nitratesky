@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription>
+		Newsboat is an RSS/Atom feedreader. RSS and Atom are a number
+		of widely-used XML formats to transmit, publish and syndicate articles,
+		for example news or blog articles. Newsboat is designed to be used on
+		text terminals on Unix or Unix-like systems such as GNU/Linux, FreeBSD
+		or macOS.
+
+		This version of newsboat package also verifies the release signature.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">newsboat/newsboat</remote-id>
+	</upstream>
+</pkgmetadata>
+
