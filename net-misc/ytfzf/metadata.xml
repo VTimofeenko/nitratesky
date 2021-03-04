@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">
+		Maintainer note: there are no releases upstream. The pinned date is for convenience and to separate truly live release from a pinned version.
+		Supports:
+
+		* Thumbnails
+
+		* History support
+
+		* Download support
+
+		* Format selection (and default formats)
+
+		* Queue multiple tracks (using fzf multiselection)
+
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/pystardust/ytfzf/issues</bugs-to>
+		<remote-id type="github">pystardust/ytfzf</remote-id>
+	</upstream>
+</pkgmetadata>
+
