@@ -85,6 +85,25 @@ Remotes:
 Asynchronous jobs for ZSH
 
 With zsh-async you can run multiple asynchronous jobs, enforce unique jobs (multiple instances of the same job will not run), flush all currently running jobs and create multiple workers (each with their own jobs). For each worker you can register a callback-function through which you will be notified about the job results (job name, return code, output and execution time).
+## net-misc/ytfzf
+
+**Versions available**:
+2021.03.04, 99999999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/pystardust/ytfzf).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/pystardust/ytfzf.svg)](https://GitHub.com/pystardust/ytfzf/releases/)
+
+A posix script that helps you find Youtube videos and opens using mpv/youtube-dl
+
+Maintainer note: there are no releases upstream. The pinned date is for convenience and to separate truly live release from a pinned version. Supports:
+* Thumbnails
+* History support
+* Download support
+* Format selection (and default formats)
+* Queue multiple tracks (using fzf multiselection)
 ## x11-libs/libXft-bgra-patch
 
 **Versions available**:
