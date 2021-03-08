@@ -13,8 +13,7 @@ EGIT_REPO_URI="https://github.com/pystardust/ytfzf"
 if [[ ${PV} =~ ^9+$ ]] ; then
 	EGIT_COMMIT=""
 else
-	# As of Mar 04 upstream has no releases
-	EGIT_COMMIT_DATE="${PV}"
+	EGIT_COMMIT="v${PV}"
 	KEYWORDS="~amd64 ~x86"
 fi
 
@@ -29,7 +28,7 @@ media-video/mpv
 net-misc/youtube-dl
 "
 
-DOCS=( README.md )
+DOCS=( README.md docs/conf.sh )
 
 src_compile() {
 	# Upstream provides a makefile, but there is nothing to compile
@@ -41,7 +40,7 @@ src_install() {
 	# To prevent make install from failing
 	dodir "usr/bin"
 
-	emake DESTDIR="${D}" PREFIX=/usr install
+	emake DESTDIR="${D}" PREFIX=/usr/bin install
 	einstalldocs
 }
 
@@ -50,4 +49,6 @@ pkg_postinst() {
 
 	einfo "${PN} supports ueberzug which is currently not available from repos"
 	einfo "Please install it separately"
+
+	einfo "Default config has been placed in /usr/share/docs/${PF}/conf.sh.bz2"
 }
