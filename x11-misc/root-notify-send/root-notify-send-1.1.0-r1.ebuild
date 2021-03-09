@@ -22,7 +22,7 @@ IUSE="dunstify"
 
 DEPEND="
 x11-libs/libnotify
-dunstify? ( || ( ~x11-misc/dunst-1.4.1[dunstify] ~x11-misc/dunst-1.5.0 ) )
+dunstify? ( || ( ~x11-misc/dunst-1.4.1[dunstify] >=x11-misc/dunst-1.5.0 ) )
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
