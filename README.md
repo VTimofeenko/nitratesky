@@ -203,6 +203,20 @@ Remotes:
 A CLI interface to git that relies heavily on fzf
 
 
+## www-apps/hugo
+
+**Versions available**:
+0.81.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/gohugoio/hugo).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/gohugoio/hugo.svg)](https://GitHub.com/gohugoio/hugo/releases/)
+
+The world's fastest framework for building websites
+
+Hugo is a static HTML and CSS website generator written in Go. It is optimized for speed, ease of use, and configurability.
 ## media-gfx/scrnsht_ctl
 
 **Versions available**:
@@ -222,7 +236,7 @@ A basic script to switch monitors when connected to specific network
 ## x11-misc/root-notify-send
 
 **Versions available**:
-1.0.0, 1.1.0, 9999
+1.1.0, 1.1.0, 9999
 
 Remotes:
 
