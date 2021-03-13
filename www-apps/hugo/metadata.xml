@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<use>
+		<flag name="sass">Enable SASS/SCSS support</flag>
+		<flag name="fish-completion">Enable fish completion support</flag>
+		<flag name="zsh-completion">Enable zsh completion support</flag>
+	</use>
+	<longdescription lang="en">
+		Hugo is a static HTML and CSS website generator written in Go.
+		It is optimized for speed, ease of use, and configurability.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">gohugoio/hugo</remote-id>
+	</upstream>
+</pkgmetadata>
+
