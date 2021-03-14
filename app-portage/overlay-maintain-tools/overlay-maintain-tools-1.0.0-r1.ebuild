@@ -1,4 +1,4 @@
-# Copyright 2020 Gentoo Authors
+# Copyright 2020-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -17,13 +17,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="zsh-completion bash-completion"
 
-# TODO
 RDEPEND="
-~dev-python/python-dotenv-0.15.0[${PYTHON_USEDEP}]
-dev-python/requests[${PYTHON_USEDEP}]
-~dev-python/typer-0.3.2[${PYTHON_USEDEP}]
-~dev-python/toolz-0.11.1[${PYTHON_USEDEP}]
 dev-python/jinja[${PYTHON_USEDEP}]
+dev-python/requests[${PYTHON_USEDEP}]
+~dev-python/python-dotenv-0.15.0[${PYTHON_USEDEP}]
+~dev-python/toolz-0.11.1[${PYTHON_USEDEP}]
+~dev-python/typer-0.3.2[${PYTHON_USEDEP}]
+sys-apps/man2html
 "
 DISTUTILS_USE_SETUPTOOLS=rdepend
 
