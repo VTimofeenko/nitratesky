@@ -11,7 +11,7 @@
 			<name>Luke Cyca</name>
 		</maintainer>
 		<remote-id type="pypi">pyzabbix</remote-id>
-		<remote-id type="github"> lukecyca/pyzabbix</remote-id>
+		<remote-id type="github">lukecyca/pyzabbix</remote-id>
 	</upstream>
 </pkgmetadata>
 
