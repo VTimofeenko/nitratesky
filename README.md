@@ -137,6 +137,23 @@ Typer, build great CLIs. Easy to code. Based on Python type hints.
 Provides functions to return paths defined by XDG Base Directory Specification
 
 
+## dev-python/pyzabbix
+
+**Versions available**:
+0.8.2
+
+Remotes:
+
+* **PyPI**: [link](https://pypi.python.org/pypi/pyzabbix/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/pyzabbix.svg)](https://pypi.python.org/pypi/pyzabbix/) [![PyPI version shields.io](https://img.shields.io/pypi/v/pyzabbix.svg)](https://pypi.python.org/pypi/pyzabbix/)
+* **GitHub**: [link](https://github.com/lukecyca/pyzabbix).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/lukecyca/pyzabbix.svg)](https://GitHub.com/lukecyca/pyzabbix/releases/)
+
+Zabbix API Python interface
+
+
 ## dev-python/pynvim
 
 **Versions available**:
