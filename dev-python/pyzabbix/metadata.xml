@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<upstream>
+		<maintainer>
+			<email>me@lukecyca.com</email>
+			<name>Luke Cyca</name>
+		</maintainer>
+		<remote-id type="pypi">pyzabbix</remote-id>
+		<remote-id type="github"> lukecyca/pyzabbix</remote-id>
+	</upstream>
+</pkgmetadata>
+
