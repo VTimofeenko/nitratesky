@@ -157,7 +157,7 @@ Zabbix API Python interface
 ## dev-python/pynvim
 
 **Versions available**:
-0.4.2
+0.4.2, 0.4.3
 
 Remotes:
 
