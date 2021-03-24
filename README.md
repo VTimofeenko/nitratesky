@@ -299,7 +299,7 @@ Bug #749351
 ## net-news/newsboat
 
 **Versions available**:
-2.22.1
+2.22.1, 2.23
 
 Remotes:
 
