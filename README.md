@@ -175,7 +175,7 @@ Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am 
 ## dev-python/atlassian-python-api
 
 **Versions available**:
-1.17.6, 2.3.0
+1.17.6, 2.3.0, 3.8.0
 
 Remotes:
 
