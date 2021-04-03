@@ -9,7 +9,7 @@ SRC_URI="https://newsboat.org/newsboat.pgp"
 
 LICENSE="public-domain"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 x86 arm ppc64"
 IUSE="test"
 
 DEPEND=""
