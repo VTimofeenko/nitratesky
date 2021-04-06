@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">
+		Need to compare software, package or whatever versions? Comparing 1.0 and 1.1 could be easy, but are you ready for more complex cases like 1.2-x.3~alpha4? libversion is, which is proven by using the library in Repology project which relies on comparing software version strings, even if they are written in different formats.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/repology/libversion/issues</bugs-to>
+		<doc>https://github.com/repology/libversion/blob/master/README.md</doc>
+		<remote-id type="github">repology/libversion</remote-id>
+	</upstream>
+</pkgmetadata>
+
