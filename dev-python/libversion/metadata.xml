@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">
+		Python bindings for libversion, which provides fast, powerful and correct generic version string comparison algorithm.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/repology/py-libversion/issues</bugs-to>
+		<doc>https://github.com/repology/py-libversion/blob/master/README.md</doc>
+		<remote-id type="github">repology/py-libversion</remote-id>
+	</upstream>
+</pkgmetadata>
+
