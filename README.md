@@ -112,6 +112,20 @@ Maintainer note: there are no releases upstream. The pinned date is for convenie
 BGRA patch for libXft
 
 This is a patch file for enabling BGRA glyphs (emojis) support in libXft. Installs as a single patch file into /etc/portage/. The patch file was taken from https://gitlab.freedesktop.org/xorg/lib/libxft/-/merge_requests/1
+## dev-python/libversion
+
+**Versions available**:
+1.2.3
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/repology/py-libversion).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/repology/py-libversion.svg)](https://GitHub.com/repology/py-libversion/releases/)
+
+Python bindings for libversion
+
+Python bindings for libversion, which provides fast, powerful and correct generic version string comparison algorithm.
 ## dev-python/typer
 
 **Versions available**:
@@ -357,6 +371,20 @@ Remotes:
 A small utility to write down user patches
 
 
+## dev-libs/libversion
+
+**Versions available**:
+3.0.1
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/repology/libversion).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/repology/libversion.svg)](https://GitHub.com/repology/libversion/releases/)
+
+Advanced version string comparison library
+
+Need to compare software, package or whatever versions? Comparing 1.0 and 1.1 could be easy, but are you ready for more complex cases like 1.2-x.3~alpha4? libversion is, which is proven by using the library in Repology project which relies on comparing software version strings, even if they are written in different formats.
 ## app-text/mimedown
 
 **Versions available**:
