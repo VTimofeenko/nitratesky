@@ -88,7 +88,7 @@ With zsh-async you can run multiple asynchronous jobs, enforce unique jobs (mult
 ## net-misc/ytfzf
 
 **Versions available**:
-1.1.0, 1.1.1, 1.1.2, 99999999
+1.1.0, 1.1.1, 1.1.2, 1.1.4, 99999999
 
 Remotes:
 
@@ -343,7 +343,7 @@ git-verify-signature.eclass is based on and exposes the same variables
 ## app-portage/overlay-maintain-tools
 
 **Versions available**:
-1.0.0
+1.0.0, 1.1.0
 
 Remotes:
 
