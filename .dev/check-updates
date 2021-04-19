@@ -1,0 +1,4 @@
+#!/bin/sh
+
+overlay_maintain_tools check-repology --repology-cache-location .dev/repology-cache
+overlay_maintain_tools check-remote-versions --show-updates-only
