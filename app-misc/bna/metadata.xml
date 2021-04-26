@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">
+		bna is a command line interface to the python-bna library. It can store and manage multiple authenticators, as well as create new ones.
+		Remember: Using an authenticator on the same device as the one you log in with is less secure than keeping the devices separate. Use this at your own risk.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">jleclanche/python-bna</remote-id>
+		<remote-id type="pypi">bna</remote-id>
+	</upstream>
+</pkgmetadata>
+
