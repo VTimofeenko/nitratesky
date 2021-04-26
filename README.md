@@ -56,6 +56,23 @@ A _very_ primitive telegram notification mechanism
 Based on ckb-next, provides patched version for specific device
 
 
+## app-misc/bna
+
+**Versions available**:
+5.0.2, 9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/jleclanche/python-bna).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/jleclanche/python-bna.svg)](https://GitHub.com/jleclanche/python-bna/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/bna/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/bna.svg)](https://pypi.python.org/pypi/bna/) [![PyPI version shields.io](https://img.shields.io/pypi/v/bna.svg)](https://pypi.python.org/pypi/bna/)
+
+Command-line interface for managing Battle.net authenticator
+
+bna is a command line interface to the python-bna library. It can store and manage multiple authenticators, as well as create new ones. Remember: Using an authenticator on the same device as the one you log in with is less secure than keeping the devices separate. Use this at your own risk.
 ## app-misc/brightnessctl
 
 **Versions available**:
