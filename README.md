@@ -105,7 +105,7 @@ With zsh-async you can run multiple asynchronous jobs, enforce unique jobs (mult
 ## net-misc/ytfzf
 
 **Versions available**:
-1.1.0, 1.1.1, 1.1.2, 1.1.4, 99999999
+1.1.1, 1.1.2, 1.1.4, 1.1.5, 99999999
 
 Remotes:
 
