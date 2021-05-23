@@ -223,7 +223,7 @@ Provides a simple python interface for interacting with Atlassian products
 ## app-office/todoman
 
 **Versions available**:
-3.8.0, 3.9.0
+3.8.0, 3.9.0, 4.0.0
 
 Remotes:
 
