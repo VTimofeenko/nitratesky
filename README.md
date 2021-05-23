@@ -29,7 +29,7 @@ Alternatively, you can add the following to your `/etc/portage/repos.conf`:
 ## app-misc/headsetcontrol
 
 **Versions available**:
-2.3, 9999
+2.3, 2.4, 9999
 
 Remotes:
 
