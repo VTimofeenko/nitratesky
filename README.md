@@ -206,7 +206,7 @@ Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am 
 ## dev-python/atlassian-python-api
 
 **Versions available**:
-1.17.6, 2.3.0, 3.8.0
+1.17.6, 2.3.0, 3.11.0
 
 Remotes:
 
@@ -223,7 +223,7 @@ Provides a simple python interface for interacting with Atlassian products
 ## app-office/todoman
 
 **Versions available**:
-3.8.0, 3.9.0, 4.0.0
+3.8.0, 3.9.0, 4.0.0, 4.0.0
 
 Remotes:
 
@@ -419,7 +419,7 @@ Write email in markdown, and convert to multipart MIME
 ## app-text/confluence_poster
 
 **Versions available**:
-1.1.0, 1.4.0, 1.4.1, 1.4.2
+1.4.4
 
 Remotes:
 
