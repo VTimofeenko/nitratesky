@@ -20,7 +20,7 @@ IUSE="zsh-completion bash-completion"
 RDEPEND="
 dev-python/jinja[${PYTHON_USEDEP}]
 dev-python/requests[${PYTHON_USEDEP}]
-~dev-python/python-dotenv-0.15.0[${PYTHON_USEDEP}]
+>=dev-python/python-dotenv-0.15.0[${PYTHON_USEDEP}]
 ~dev-python/toolz-0.11.1[${PYTHON_USEDEP}]
 ~dev-python/typer-0.3.2[${PYTHON_USEDEP}]
 dev-python/libversion[${PYTHON_USEDEP}]
