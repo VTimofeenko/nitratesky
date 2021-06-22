@@ -26,34 +26,20 @@ Alternatively, you can add the following to your `/etc/portage/repos.conf`:
 
 # Packages
 
-## app-misc/headsetcontrol
+## app-crypt/openpgp-keys-newsboat
 
 **Versions available**:
-2.3, 2.4, 9999
+20210221
 
-Remotes:
+Public key of Newsboat release
 
-* **GitHub**: [link](https://github.com/Sapd/HeadsetControl).
 
-	Release: [![GitHub release](https://img.shields.io/github/release/Sapd/HeadsetControl.svg)](https://GitHub.com/Sapd/HeadsetControl/releases/)
-
-Adds loopback and LED control to headsets
-
-A tool to control certain aspects of USB-connected headsets on Linux. Currently, support is provided for adjusting sidetone, getting battery state, controlling LEDs, and setting the inactive time. See below for which headset supports which feature.
-## app-misc/tg-notify
+## app-crypt/openpgp-keys-vtimofeenko
 
 **Versions available**:
-9999
+20200204
 
-A _very_ primitive telegram notification mechanism
-
-
-## app-misc/ckb-next-void
-
-**Versions available**:
-0.1
-
-Based on ckb-next, provides patched version for specific device
+Public key of Vladimir Timofeenko
 
 
 ## app-misc/bna
@@ -88,136 +74,34 @@ This program allows you read and control device brightness.
 
 This program allows you read and control device brightness. Devices, by default, include backlight and LEDs (searched for in corresponding classes). If omitted, the first found device is selected.
 It can also preserve current brightness before applying the operation (allowing for usecases like disabling backlight on lid close).
-## app-shells/zsh-async
+## app-misc/ckb-next-void
 
 **Versions available**:
-1.8.5, 9999
+0.1
+
+Based on ckb-next, provides patched version for specific device
+
+
+## app-misc/headsetcontrol
+
+**Versions available**:
+2.3, 2.4, 9999
 
 Remotes:
 
-* **GitHub**: [link](https://github.com/mafredri/zsh-async).
+* **GitHub**: [link](https://github.com/Sapd/HeadsetControl).
 
-	Release: [![GitHub release](https://img.shields.io/github/release/mafredri/zsh-async.svg)](https://GitHub.com/mafredri/zsh-async/releases/)
+	Release: [![GitHub release](https://img.shields.io/github/release/Sapd/HeadsetControl.svg)](https://GitHub.com/Sapd/HeadsetControl/releases/)
 
-Asynchronous jobs for ZSH
+Adds loopback and LED control to headsets
 
-With zsh-async you can run multiple asynchronous jobs, enforce unique jobs (multiple instances of the same job will not run), flush all currently running jobs and create multiple workers (each with their own jobs). For each worker you can register a callback-function through which you will be notified about the job results (job name, return code, output and execution time).
-## net-misc/ytfzf
-
-**Versions available**:
-1.1.2, 1.1.4, 1.1.5, 1.1.6, 99999999
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/pystardust/ytfzf).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/pystardust/ytfzf.svg)](https://GitHub.com/pystardust/ytfzf/releases/)
-
-A posix script that helps you find Youtube videos and opens using mpv/youtube-dl
-
-Maintainer note: there are no releases upstream. The pinned date is for convenience and to separate truly live release from a pinned version. Supports:
-* Thumbnails
-* History support
-* Download support
-* Format selection (and default formats)
-* Queue multiple tracks (using fzf multiselection)
-## x11-libs/libXft-bgra-patch
+A tool to control certain aspects of USB-connected headsets on Linux. Currently, support is provided for adjusting sidetone, getting battery state, controlling LEDs, and setting the inactive time. See below for which headset supports which feature.
+## app-misc/tg-notify
 
 **Versions available**:
 9999
 
-BGRA patch for libXft
-
-This is a patch file for enabling BGRA glyphs (emojis) support in libXft. Installs as a single patch file into /etc/portage/. The patch file was taken from https://gitlab.freedesktop.org/xorg/lib/libxft/-/merge_requests/1
-## dev-python/libversion
-
-**Versions available**:
-1.2.3
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/repology/py-libversion).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/repology/py-libversion.svg)](https://GitHub.com/repology/py-libversion/releases/)
-
-Python bindings for libversion
-
-Python bindings for libversion, which provides fast, powerful and correct generic version string comparison algorithm.
-## dev-python/typer
-
-**Versions available**:
-0.3.2
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/tiangolo/typer).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/tiangolo/typer.svg)](https://GitHub.com/tiangolo/typer/releases/)
-* **PyPI**: [link](https://pypi.python.org/pypi/typer/).
-
-	Version: [![PyPI version fury.io](https://badge.fury.io/py/typer.svg)](https://pypi.python.org/pypi/typer/) [![PyPI version shields.io](https://img.shields.io/pypi/v/typer.svg)](https://pypi.python.org/pypi/typer/)
-
-Typer, build great CLIs. Easy to code. Based on Python type hints.
-
-
-## dev-python/xdg
-
-**Versions available**:
-5.0.1
-
-Provides functions to return paths defined by XDG Base Directory Specification
-
-
-## dev-python/pyzabbix
-
-**Versions available**:
-0.8.2
-
-Remotes:
-
-* **PyPI**: [link](https://pypi.python.org/pypi/pyzabbix/).
-
-	Version: [![PyPI version fury.io](https://badge.fury.io/py/pyzabbix.svg)](https://pypi.python.org/pypi/pyzabbix/) [![PyPI version shields.io](https://img.shields.io/pypi/v/pyzabbix.svg)](https://pypi.python.org/pypi/pyzabbix/)
-* **GitHub**: [link](https://github.com/lukecyca/pyzabbix).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/lukecyca/pyzabbix.svg)](https://GitHub.com/lukecyca/pyzabbix/releases/)
-
-Zabbix API Python interface
-
-
-## dev-python/pynvim
-
-**Versions available**:
-0.4.2, 0.4.3
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/neovim/pynvim).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/neovim/pynvim.svg)](https://GitHub.com/neovim/pynvim/releases/)
-* **PyPI**: [link](https://pypi.python.org/pypi/pynvim/).
-
-	Version: [![PyPI version fury.io](https://badge.fury.io/py/pynvim.svg)](https://pypi.python.org/pypi/pynvim/) [![PyPI version shields.io](https://img.shields.io/pypi/v/pynvim.svg)](https://pypi.python.org/pypi/pynvim/)
-
-Python client for Neovim
-
-Pynvim implements support for python plugins in Nvim. It also works as a library for connecting to and scripting Nvim processes through its msgpack-rpc API.
-Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am testing its interaction with binpkgs before submitting a pull request.
-## dev-python/atlassian-python-api
-
-**Versions available**:
-1.17.6, 2.3.0, 3.11.0
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/atlassian-api/atlassian-python-api).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/atlassian-api/atlassian-python-api.svg)](https://GitHub.com/atlassian-api/atlassian-python-api/releases/)
-* **PyPI**: [link](https://pypi.python.org/pypi/atlassian-python-api/).
-
-	Version: [![PyPI version fury.io](https://badge.fury.io/py/atlassian-python-api.svg)](https://pypi.python.org/pypi/atlassian-python-api/) [![PyPI version shields.io](https://img.shields.io/pypi/v/atlassian-python-api.svg)](https://pypi.python.org/pypi/atlassian-python-api/)
-
-Provides a simple python interface for interacting with Atlassian products
+A _very_ primitive telegram notification mechanism
 
 
 ## app-office/todoman
@@ -237,111 +121,6 @@ Remotes:
 Simple, standards-based, cli todo (aka: task) manager
 
 Todoman is a simple, standards-based, cli todo (aka: task) manager. Todos are stored into icalendar files, which means you can sync them via CalDAV using, for example, vdirsyncer.
-## dev-vcs/git-fuzzy
-
-**Versions available**:
-9999
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/bigH/git-fuzzy).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/bigH/git-fuzzy.svg)](https://GitHub.com/bigH/git-fuzzy/releases/)
-
-A CLI interface to git that relies heavily on fzf
-
-
-## www-apps/hugo
-
-**Versions available**:
-0.81.0, 0.82.0, 0.82.1, 0.83.1
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/gohugoio/hugo).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/gohugoio/hugo.svg)](https://GitHub.com/gohugoio/hugo/releases/)
-
-The world's fastest framework for building websites
-
-Hugo is a static HTML and CSS website generator written in Go. It is optimized for speed, ease of use, and configurability.
-## media-gfx/scrnsht_ctl
-
-**Versions available**:
-9999
-
-A small ctl wrapper around main to be used in conjunction with i3/sway.
-
-
-## x11-misc/monitors-switch
-
-**Versions available**:
-9999
-
-A basic script to switch monitors when connected to specific network
-
-
-## x11-misc/root-notify-send
-
-**Versions available**:
-1.1.0, 1.1.0, 9999
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/VTimofeenko/root-notify-send).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/root-notify-send.svg)](https://GitHub.com/VTimofeenko/root-notify-send/releases/)
-
-Allows calling notify-send as root for it to appear on a user's desktop
-
-
-## x11-misc/SH-wm-scripts
-
-**Versions available**:
-9999
-
-This is a collection of scripts to be used with tmux, i3-gaps and i3blocks.
-
-
-## net-im/teams-for-linux
-
-**Versions available**:
-0.7.0, 1.0.0
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/IsmaelMartinez/teams-for-linux).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/IsmaelMartinez/teams-for-linux.svg)](https://GitHub.com/IsmaelMartinez/teams-for-linux/releases/)
-
-Microsoft Teams client for Linux. Binary precompiled version.
-
-
-## net-analyzer/zabbix
-
-**Versions available**:
-5.2.4
-
-ZABBIX is software for monitoring of your applications, network and servers
-
-ZABBIX is software for monitoring of your applications, network and servers. ZABBIX supports both polling and trapping techniques to collect data from monitored hosts. A flexible notification mechanism allows easy and quickly configure different types of notifications for pre-defined events.
-This version differs from main tree by adding agent2 use flag.
-Bug #749351
-## net-news/newsboat
-
-**Versions available**:
-2.22.1, 2.23
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/newsboat/newsboat).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/newsboat/newsboat.svg)](https://GitHub.com/newsboat/newsboat/releases/)
-
-An RSS/Atom feed reader for text terminals
-
-Newsboat is an RSS/Atom feedreader. RSS and Atom are a number of widely-used XML formats to transmit, publish and syndicate articles, for example news or blog articles. Newsboat is designed to be used on text terminals on Unix or Unix-like systems such as GNU/Linux, FreeBSD or macOS.
-This version of newsboat package also verifies the release signature.
 ## app-portage/git-verify-signature
 
 **Versions available**:
@@ -360,7 +139,7 @@ git-verify-signature.eclass is based on and exposes the same variables
 ## app-portage/overlay-maintain-tools
 
 **Versions available**:
-1.0.0, 1.1.0
+1.2.0
 
 Remotes:
 
@@ -388,34 +167,20 @@ Remotes:
 A small utility to write down user patches
 
 
-## dev-libs/libversion
+## app-shells/zsh-async
 
 **Versions available**:
-3.0.1
+1.8.5, 9999
 
 Remotes:
 
-* **GitHub**: [link](https://github.com/repology/libversion).
+* **GitHub**: [link](https://github.com/mafredri/zsh-async).
 
-	Release: [![GitHub release](https://img.shields.io/github/release/repology/libversion.svg)](https://GitHub.com/repology/libversion/releases/)
+	Release: [![GitHub release](https://img.shields.io/github/release/mafredri/zsh-async.svg)](https://GitHub.com/mafredri/zsh-async/releases/)
 
-Advanced version string comparison library
+Asynchronous jobs for ZSH
 
-Need to compare software, package or whatever versions? Comparing 1.0 and 1.1 could be easy, but are you ready for more complex cases like 1.2-x.3~alpha4? libversion is, which is proven by using the library in Repology project which relies on comparing software version strings, even if they are written in different formats.
-## app-text/mimedown
-
-**Versions available**:
-9999
-
-Remotes:
-
-* **GitHub**: [link](https://github.com/begriffs/mimedown).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/begriffs/mimedown.svg)](https://GitHub.com/begriffs/mimedown/releases/)
-
-Write email in markdown, and convert to multipart MIME
-
-
+With zsh-async you can run multiple asynchronous jobs, enforce unique jobs (multiple instances of the same job will not run), flush all currently running jobs and create multiple workers (each with their own jobs). For each worker you can register a callback-function through which you will be notified about the job results (job name, return code, output and execution time).
 ## app-text/confluence_poster
 
 **Versions available**:
@@ -434,20 +199,255 @@ Supplementary script for posting confluence wiki articles from vim.
 
 Supplementary script for writing Confluence articles in local editor.
 Uses information from the config to post the article content to Confluence.
-## app-crypt/openpgp-keys-vtimofeenko
+## app-text/mimedown
 
 **Versions available**:
-20200204
+9999
 
-Public key of Vladimir Timofeenko
+Remotes:
+
+* **GitHub**: [link](https://github.com/begriffs/mimedown).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/begriffs/mimedown.svg)](https://GitHub.com/begriffs/mimedown/releases/)
+
+Write email in markdown, and convert to multipart MIME
 
 
-## app-crypt/openpgp-keys-newsboat
+## dev-libs/libversion
 
 **Versions available**:
-20210221
+3.0.1
 
-Public key of Newsboat release
+Remotes:
+
+* **GitHub**: [link](https://github.com/repology/libversion).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/repology/libversion.svg)](https://GitHub.com/repology/libversion/releases/)
+
+Advanced version string comparison library
+
+Need to compare software, package or whatever versions? Comparing 1.0 and 1.1 could be easy, but are you ready for more complex cases like 1.2-x.3~alpha4? libversion is, which is proven by using the library in Repology project which relies on comparing software version strings, even if they are written in different formats.
+## dev-python/atlassian-python-api
+
+**Versions available**:
+1.17.6, 2.3.0, 3.11.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/atlassian-api/atlassian-python-api).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/atlassian-api/atlassian-python-api.svg)](https://GitHub.com/atlassian-api/atlassian-python-api/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/atlassian-python-api/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/atlassian-python-api.svg)](https://pypi.python.org/pypi/atlassian-python-api/) [![PyPI version shields.io](https://img.shields.io/pypi/v/atlassian-python-api.svg)](https://pypi.python.org/pypi/atlassian-python-api/)
+
+Provides a simple python interface for interacting with Atlassian products
+
+
+## dev-python/libversion
+
+**Versions available**:
+1.2.3
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/repology/py-libversion).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/repology/py-libversion.svg)](https://GitHub.com/repology/py-libversion/releases/)
+
+Python bindings for libversion
+
+Python bindings for libversion, which provides fast, powerful and correct generic version string comparison algorithm.
+## dev-python/pynvim
+
+**Versions available**:
+0.4.2, 0.4.3
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/neovim/pynvim).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/neovim/pynvim.svg)](https://GitHub.com/neovim/pynvim/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/pynvim/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/pynvim.svg)](https://pypi.python.org/pypi/pynvim/) [![PyPI version shields.io](https://img.shields.io/pypi/v/pynvim.svg)](https://pypi.python.org/pypi/pynvim/)
+
+Python client for Neovim
+
+Pynvim implements support for python plugins in Nvim. It also works as a library for connecting to and scripting Nvim processes through its msgpack-rpc API.
+Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am testing its interaction with binpkgs before submitting a pull request.
+## dev-python/pyzabbix
+
+**Versions available**:
+0.8.2, 0.8.2
+
+Remotes:
+
+* **PyPI**: [link](https://pypi.python.org/pypi/pyzabbix/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/pyzabbix.svg)](https://pypi.python.org/pypi/pyzabbix/) [![PyPI version shields.io](https://img.shields.io/pypi/v/pyzabbix.svg)](https://pypi.python.org/pypi/pyzabbix/)
+* **GitHub**: [link](https://github.com/lukecyca/pyzabbix).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/lukecyca/pyzabbix.svg)](https://GitHub.com/lukecyca/pyzabbix/releases/)
+
+Zabbix API Python interface
+
+
+## dev-python/typer
+
+**Versions available**:
+0.3.2
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/tiangolo/typer).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/tiangolo/typer.svg)](https://GitHub.com/tiangolo/typer/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/typer/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/typer.svg)](https://pypi.python.org/pypi/typer/) [![PyPI version shields.io](https://img.shields.io/pypi/v/typer.svg)](https://pypi.python.org/pypi/typer/)
+
+Typer, build great CLIs. Easy to code. Based on Python type hints.
+
+
+## dev-python/xdg
+
+**Versions available**:
+5.0.1
+
+Provides functions to return paths defined by XDG Base Directory Specification
+
+
+## dev-vcs/git-fuzzy
+
+**Versions available**:
+9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/bigH/git-fuzzy).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/bigH/git-fuzzy.svg)](https://GitHub.com/bigH/git-fuzzy/releases/)
+
+A CLI interface to git that relies heavily on fzf
+
+
+## media-gfx/scrnsht_ctl
+
+**Versions available**:
+9999
+
+A small ctl wrapper around main to be used in conjunction with i3/sway.
+
+
+## net-analyzer/zabbix
+
+**Versions available**:
+5.2.4
+
+ZABBIX is software for monitoring of your applications, network and servers
+
+ZABBIX is software for monitoring of your applications, network and servers. ZABBIX supports both polling and trapping techniques to collect data from monitored hosts. A flexible notification mechanism allows easy and quickly configure different types of notifications for pre-defined events.
+This version differs from main tree by adding agent2 use flag.
+Bug #749351
+## net-im/teams-for-linux
+
+**Versions available**:
+0.7.0, 1.0.0
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/IsmaelMartinez/teams-for-linux).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/IsmaelMartinez/teams-for-linux.svg)](https://GitHub.com/IsmaelMartinez/teams-for-linux/releases/)
+
+Microsoft Teams client for Linux. Binary precompiled version.
+
+
+## net-misc/ytfzf
+
+**Versions available**:
+1.1.2, 1.1.4, 1.1.5, 1.1.6, 99999999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/pystardust/ytfzf).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/pystardust/ytfzf.svg)](https://GitHub.com/pystardust/ytfzf/releases/)
+
+A posix script that helps you find Youtube videos and opens using mpv/youtube-dl
+
+Maintainer note: there are no releases upstream. The pinned date is for convenience and to separate truly live release from a pinned version. Supports:
+* Thumbnails
+* History support
+* Download support
+* Format selection (and default formats)
+* Queue multiple tracks (using fzf multiselection)
+## net-news/newsboat
+
+**Versions available**:
+2.22.1, 2.23, 2.24
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/newsboat/newsboat).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/newsboat/newsboat.svg)](https://GitHub.com/newsboat/newsboat/releases/)
+
+An RSS/Atom feed reader for text terminals
+
+Newsboat is an RSS/Atom feedreader. RSS and Atom are a number of widely-used XML formats to transmit, publish and syndicate articles, for example news or blog articles. Newsboat is designed to be used on text terminals on Unix or Unix-like systems such as GNU/Linux, FreeBSD or macOS.
+This version of newsboat package also verifies the release signature.
+## www-apps/hugo
+
+**Versions available**:
+0.81.0, 0.82.0, 0.82.1, 0.83.1
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/gohugoio/hugo).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/gohugoio/hugo.svg)](https://GitHub.com/gohugoio/hugo/releases/)
+
+The world's fastest framework for building websites
+
+Hugo is a static HTML and CSS website generator written in Go. It is optimized for speed, ease of use, and configurability.
+## x11-libs/libXft-bgra-patch
+
+**Versions available**:
+9999
+
+BGRA patch for libXft
+
+This is a patch file for enabling BGRA glyphs (emojis) support in libXft. Installs as a single patch file into /etc/portage/. The patch file was taken from https://gitlab.freedesktop.org/xorg/lib/libxft/-/merge_requests/1
+## x11-misc/SH-wm-scripts
+
+**Versions available**:
+9999
+
+This is a collection of scripts to be used with tmux, i3-gaps and i3blocks.
+
+
+## x11-misc/monitors-switch
+
+**Versions available**:
+9999
+
+A basic script to switch monitors when connected to specific network
+
+
+## x11-misc/root-notify-send
+
+**Versions available**:
+1.1.0, 1.1.0, 9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/VTimofeenko/root-notify-send).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/root-notify-send.svg)](https://GitHub.com/VTimofeenko/root-notify-send/releases/)
+
+Allows calling notify-send as root for it to appear on a user's desktop
 
 
 
