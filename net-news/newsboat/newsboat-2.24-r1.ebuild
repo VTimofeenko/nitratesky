@@ -138,7 +138,7 @@ BDEPEND="
 	dev-ruby/asciidoctor
 	virtual/awk
 	virtual/pkgconfig
-	>=virtual/rust-1.42.0
+	>=virtual/rust-1.48.0
 	verify-sig? ( app-crypt/openpgp-keys-newsboat )
 "
 
