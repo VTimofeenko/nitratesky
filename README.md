@@ -107,7 +107,7 @@ A _very_ primitive telegram notification mechanism
 ## app-office/todoman
 
 **Versions available**:
-3.8.0, 3.9.0, 4.0.0, 4.0.0
+3.8.0, 3.9.0, 4.0.0
 
 Remotes:
 
@@ -139,7 +139,7 @@ git-verify-signature.eclass is based on and exposes the same variables
 ## app-portage/overlay-maintain-tools
 
 **Versions available**:
-1.2.0
+1.2.0, 1.3.0
 
 Remotes:
 
@@ -279,7 +279,7 @@ Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am 
 ## dev-python/pyzabbix
 
 **Versions available**:
-0.8.2, 0.8.2
+0.8.2
 
 Remotes:
 
@@ -401,7 +401,7 @@ This version of newsboat package also verifies the release signature.
 ## www-apps/hugo
 
 **Versions available**:
-0.81.0, 0.82.0, 0.82.1, 0.83.1
+0.82.1, 0.83.1, 0.84.3
 
 Remotes:
 
@@ -439,7 +439,7 @@ A basic script to switch monitors when connected to specific network
 ## x11-misc/root-notify-send
 
 **Versions available**:
-1.1.0, 1.1.0, 9999
+1.1.0, 9999
 
 Remotes:
 
