@@ -30,12 +30,7 @@ Alternatively, you can add the following to your `/etc/portage/repos.conf`:
 ## {{ package.atomname }}
 
 **Versions available**:
-{% for version in package.versions %}
-{{ version }}
-{%- if not loop.last %}
-, {% endif %}
-{% endfor %}
-
+{{ package.versions | render_versions }}
 {% if package.remotes %}
 
 Remotes:
