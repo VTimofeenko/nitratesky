@@ -401,7 +401,7 @@ This version of newsboat package also verifies the release signature.
 ## www-apps/hugo
 
 **Versions available**:
-0.82.1, 0.83.1, 0.84.3
+0.83.1, 0.84.3, 0.85.0
 
 Remotes:
 
