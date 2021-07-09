@@ -41,7 +41,7 @@ src_prepare(){
 	default
 }
 src_install() {
-	MY_MODULE_PATH="${EPREFIX}/usr/lib/dracut/modules.d/99cryptsetup-pcscd"
+	MY_MODULE_PATH="${EPREFIX}/usr/lib/dracut/modules.d/99pcscd-cryptsetup"
 	dodir "${MY_MODULE_PATH}"
 	insinto "${MY_MODULE_PATH}"
 	doins module-setup.sh
