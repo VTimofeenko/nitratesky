@@ -1,0 +1,12 @@
+diff --git a/module-setup.sh b/module-setup.sh
+index 24ce0b3..d320080 100644
+--- a/module-setup.sh
++++ b/module-setup.sh
+@@ -16,6 +16,7 @@ install() {
+     _install_ccid
+     _install_opensc
+     _install_p11_kit
++    _debug
+ }
+ 
+ _install_pcscd() {
