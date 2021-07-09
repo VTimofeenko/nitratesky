@@ -398,6 +398,20 @@ An RSS/Atom feed reader for text terminals
 
 Newsboat is an RSS/Atom feedreader. RSS and Atom are a number of widely-used XML formats to transmit, publish and syndicate articles, for example news or blog articles. Newsboat is designed to be used on text terminals on Unix or Unix-like systems such as GNU/Linux, FreeBSD or macOS.
 This version of newsboat package also verifies the release signature.
+## sys-kernel/dracut-pcscd-cryptsetup
+
+**Versions available**:
+9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/VTimofeenko/dracut-pcscd-cryptsetup).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/dracut-pcscd-cryptsetup.svg)](https://GitHub.com/VTimofeenko/dracut-pcscd-cryptsetup/releases/)
+
+A dracut module that installs pcscd daemon into initramfs
+
+
 ## www-apps/hugo
 
 **Versions available**:
