@@ -279,7 +279,7 @@ Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am 
 ## dev-python/pyzabbix
 
 **Versions available**:
-0.8.2
+0.8.2, 1.0.0
 
 Remotes:
 
