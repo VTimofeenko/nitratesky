@@ -340,6 +340,21 @@ A CLI interface to git that relies heavily on fzf
 A small ctl wrapper around main to be used in conjunction with i3/sway.
 
 
+## media-sound/ncspot
+
+**Versions available**:
+0.7.3
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/hrkfdn/ncspot).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/hrkfdn/ncspot.svg)](https://GitHub.com/hrkfdn/ncspot/releases/)
+
+ncurses Spotify client written in Rust
+
+ncurses Spotify client written in Rust using librespot. It is heavily inspired by ncurses MPD clients, such as ncmpc. The author's motivation was to provide a simple and resource friendly alternative to the official client as well as to support platforms that currently don't have a Spotify client, such as the *BSDs.
+*Maintainer note*: cover feature not yet supported.
 ## net-analyzer/zabbix
 
 **Versions available**:

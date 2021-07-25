@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">
+		ncurses Spotify client written in Rust using librespot. It is heavily inspired by ncurses MPD clients, such as ncmpc. The author's motivation was to provide a simple and resource friendly alternative to the official client as well as to support platforms that currently don't have a Spotify client, such as the *BSDs.
+
+		*Maintainer note*: cover feature not yet supported.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/hrkfdn/ncspot/issues</bugs-to>
+		<remote-id type="github">hrkfdn/ncspot</remote-id>
+	</upstream>
+</pkgmetadata>
+
