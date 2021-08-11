@@ -343,7 +343,7 @@ A small ctl wrapper around main to be used in conjunction with i3/sway.
 ## media-sound/ncspot
 
 **Versions available**:
-0.7.3
+0.7.3, 0.8.1
 
 Remotes:
 
@@ -430,7 +430,7 @@ A dracut module that installs pcscd daemon into initramfs
 ## www-apps/hugo
 
 **Versions available**:
-0.83.1, 0.84.3, 0.85.0, 0.86.1
+0.83.1, 0.84.3, 0.85.0, 0.86.1, 0.87.0
 
 Remotes:
 
