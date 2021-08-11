@@ -430,7 +430,7 @@ A dracut module that installs pcscd daemon into initramfs
 ## www-apps/hugo
 
 **Versions available**:
-0.83.1, 0.84.3, 0.85.0
+0.83.1, 0.84.3, 0.85.0, 0.86.1
 
 Remotes:
 
