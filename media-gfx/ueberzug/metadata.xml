@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>overlay.maintain@vtimofeenko.com</email>
+		<description>Nitratesky Gentoo overlay</description>
+	</maintainer>
+	<longdescription lang="en">
+		Überzug is a command line util which allows to draw images on terminals by using child windows.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/seebye/ueberzug/issues</bugs-to>
+		<remote-id type="github">seebye/ueberzug</remote-id>
+		<remote-id type="pypi">ueberzug</remote-id>
+	</upstream>
+</pkgmetadata>
+
