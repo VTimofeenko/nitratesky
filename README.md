@@ -340,6 +340,23 @@ A CLI interface to git that relies heavily on fzf
 A small ctl wrapper around main to be used in conjunction with i3/sway.
 
 
+## media-gfx/ueberzug
+
+**Versions available**:
+18.1.9, 9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/seebye/ueberzug).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/seebye/ueberzug.svg)](https://GitHub.com/seebye/ueberzug/releases/)
+* **PyPI**: [link](https://pypi.python.org/pypi/ueberzug/).
+
+	Version: [![PyPI version fury.io](https://badge.fury.io/py/ueberzug.svg)](https://pypi.python.org/pypi/ueberzug/) [![PyPI version shields.io](https://img.shields.io/pypi/v/ueberzug.svg)](https://pypi.python.org/pypi/ueberzug/)
+
+Utility which allows to draw images on terminals by using child windows
+
+Überzug is a command line util which allows to draw images on terminals by using child windows.
 ## media-sound/ncspot
 
 **Versions available**:
