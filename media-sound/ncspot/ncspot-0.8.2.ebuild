@@ -439,3 +439,7 @@ RDEPEND="
 BDEPEND="
 	virtual/pkgconfig
 "
+
+pkg_postinst(){
+	optfeature "album art" media-gfx/ueberzug
+}
