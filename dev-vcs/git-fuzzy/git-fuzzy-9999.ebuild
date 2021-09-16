@@ -22,7 +22,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="
->=app-shells/fzf-0.20.0
+	>=app-shells/fzf-0.20.0
+	sys-devel/bc
 "
 RDEPEND="${DEPEND}"
 BDEPEND=""
