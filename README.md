@@ -430,6 +430,20 @@ An RSS/Atom feed reader for text terminals
 
 Newsboat is an RSS/Atom feedreader. RSS and Atom are a number of widely-used XML formats to transmit, publish and syndicate articles, for example news or blog articles. Newsboat is designed to be used on text terminals on Unix or Unix-like systems such as GNU/Linux, FreeBSD or macOS.
 This version of newsboat package also verifies the release signature.
+## net-vpn/wireguard-namespace-service
+
+**Versions available**:
+0.1.1, 9999
+
+Remotes:
+
+* **GitHub**: [link](https://github.com/VTimofeenko/wireguard-namespace-service).
+
+	Release: [![GitHub release](https://img.shields.io/github/release/VTimofeenko/wireguard-namespace-service.svg)](https://GitHub.com/VTimofeenko/wireguard-namespace-service/releases/)
+
+A script and a service to bring up isolated namespace for WireGuard
+
+
 ## sys-kernel/dracut-pcscd-cryptsetup
 
 **Versions available**:
