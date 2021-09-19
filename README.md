@@ -124,7 +124,7 @@ Todoman is a simple, standards-based, cli todo (aka: task) manager. Todos are st
 ## app-portage/git-verify-signature
 
 **Versions available**:
-1.1
+1.2
 
 Remotes:
 
