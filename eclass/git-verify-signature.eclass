@@ -54,9 +54,10 @@ case "${EAPI:-0}" in
 		;;
 esac
 
+inherit git-r3 verify-sig
+
 EXPORT_FUNCTIONS src_unpack
 
-inherit git-r3 verify-sig
 
 # Variables from verify-sig.eclass
 # @ECLASS-VARIABLE: VERIFY_SIG_OPENPGP_KEY_PATH
