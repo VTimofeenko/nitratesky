@@ -418,7 +418,7 @@ Maintainer note: there are no releases upstream. The pinned date is for convenie
 ## net-news/newsboat
 
 **Versions available**:
-2.22.1, 2.23, 2.24
+2.24, 2.25
 
 Remotes:
 
