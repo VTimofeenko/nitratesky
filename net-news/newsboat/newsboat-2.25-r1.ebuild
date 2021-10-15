@@ -96,12 +96,14 @@ CRATES="
 	xdg-2.2.0
 "
 
-inherit toolchain-funcs cargo xdg-utils
+# order matters, cargo's src_unpack is needed
+inherit toolchain-funcs xdg-utils verify-sig cargo
 
 DESCRIPTION="An RSS/Atom feed reader for text terminals"
 HOMEPAGE="https://newsboat.org/ https://github.com/newsboat/newsboat"
 SRC_URI="
 	https://newsboat.org/releases/${PV}/${P}.tar.xz
+	verify-sig? ( https://newsboat.org/releases/${PV}/${P}.tar.xz.asc )
 	$(cargo_crate_uris ${CRATES})
 "
 
@@ -109,6 +111,7 @@ LICENSE="0BSD Apache-2.0 Boost-1.0 CC0-1.0 ISC MIT Unlicense ZLIB"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc64 ~x86"
 IUSE="doc"
+VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/newsboat.asc
 
 RDEPEND="
 	>=dev-db/sqlite-3.5:3
@@ -125,6 +128,14 @@ DEPEND="${RDEPEND}
 	doc? ( dev-ruby/asciidoctor )
 	<dev-libs/openssl-1.1.2:0=
 "
+
+src_unpack() {
+	if use verify-sig; then
+		verify-sig_verify_detached "${DISTDIR}/${P}.tar.xz" "${DISTDIR}/${P}.tar.xz.asc"
+	fi
+
+	cargo_src_unpack
+}
 
 src_configure() {
 	local flag
@@ -150,10 +161,7 @@ src_compile() {
 
 src_test() {
 	# tests require UTF-8 locale
-	emake CXX="$(tc-getCXX)" AR="$(tc-getAR)" RANLIB="$(tc-getRANLIB)" test
-	# Tests fail if in ${S} rather than in ${S}/test
-	cd "${S}/test" || die
-	./test || die
+	emake CXX="$(tc-getCXX)" AR="$(tc-getAR)" RANLIB="$(tc-getRANLIB)" check
 }
 
 src_install() {
