@@ -29,7 +29,7 @@ Alternatively, you can add the following to your `/etc/portage/repos.conf`:
 ## app-crypt/openpgp-keys-newsboat
 
 **Versions available**:
-20210221
+20220920
 
 Public key of Newsboat release
 
