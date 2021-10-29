@@ -360,7 +360,7 @@ Utility which allows to draw images on terminals by using child windows
 ## media-sound/ncspot
 
 **Versions available**:
-0.7.3, 0.8.1, 0.8.2
+0.7.3, 0.8.1, 0.8.2, 0.9.0
 
 Remotes:
 
