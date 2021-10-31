@@ -423,7 +423,7 @@ DESCRIPTION="ncurses Spotify client written in Rust"
 HOMEPAGE="https://github.com/hrkfdn/ncspot"
 SRC_URI="
 	https://github.com/hrkfdn/ncspot/archive/v${PV}.tar.gz -> ${P}.tar.gz
-	$(cargo_crate_uris ${CRATES})"
+	$(cargo_crate_uris "${CRATES}")"
 
 # License set may be more restrictive as OR is not respected
 # use cargo-license for a more accurate license picture
@@ -431,17 +431,22 @@ LICENSE="0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD Boost-1.0 CC0
 SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="mirror"
+IUSE="cover"
 
 RDEPEND="
 	media-sound/pulseaudio
 	sys-libs/ncurses
 	sys-apps/dbus
 	x11-libs/libxcb
+	cover? ( media-gfx/ueberzug )
 "
 BDEPEND="
 	virtual/pkgconfig
 "
 
-pkg_postinst(){
-	optfeature "album art" media-gfx/ueberzug
+src_configure(){
+	local myfeatures=(
+		"$(usev cover)"
+	)
+	cargo_src_configure
 }
