@@ -127,7 +127,7 @@ RDEPEND="
 	>=net-misc/curl-7.21.6
 	>=dev-libs/json-c-0.11:=
 	dev-libs/libxml2
-	sys-libs/ncurses:0=[unicode]
+	sys-libs/ncurses:0=[unicode(+)]
 	sys-libs/zlib
 	dev-libs/openssl
 "

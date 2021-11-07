@@ -115,18 +115,23 @@ VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/newsboat.asc
 
 RDEPEND="
 	>=dev-db/sqlite-3.5:3
+	>=dev-libs/json-c-0.11:=
 	>=dev-libs/stfl-0.21
 	>=net-misc/curl-7.21.6
-	>=dev-libs/json-c-0.11:=
 	dev-libs/libxml2
-	sys-libs/ncurses:0=[unicode]
+	dev-libs/openssl
+	sys-libs/ncurses:0=[unicode(+)]
+	sys-libs/zlib
 "
 DEPEND="${RDEPEND}
-	virtual/pkgconfig
 	sys-devel/gettext
-	sys-libs/zlib
+"
+BDEPEND="
+	>=virtual/rust-1.53.0
 	doc? ( dev-ruby/asciidoctor )
-	<dev-libs/openssl-1.1.2:0=
+	verify-sig? ( app-crypt/openpgp-keys-newsboat )
+	virtual/awk
+	virtual/pkgconfig
 "
 
 src_unpack() {
