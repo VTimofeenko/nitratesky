@@ -1,0 +1,23 @@
+Title: Change to structure of x11-libs/libXft-bgra-patch
+Author: Vladimir Timofeenko <overlay.maintain@vtimofeenko.com>
+Posted: 2021-11-08
+Revision: 1
+News-Item-Format: 2.0
+Display-If-Installed: =x11-libs/libXft-bgra-patch-9999
+
+x11-libs/libXft-2.3.4 has been stabilized in the main repo.
+
+The x11-libs/libXft-bgra-patch package will be split into two:
+
+* One for 2.3.3 libXft version
+* One for 2.3.4 libXft version
+
+The versions of the patch package will match the libXft version
+and have corresponding dependencies.
+
+The previous 9999 version corresponds to the 2.3.3 version and
+will be kept up while libXft-2.3.3 remains in the main tree.
+
+The 2.3.4 version separates the original merge request into three
+separate patches to pin the commit ids and (should something change)
+allow for easier troubleshooting of changes.
