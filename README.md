@@ -475,7 +475,7 @@ Hugo is a static HTML and CSS website generator written in Go. It is optimized f
 ## x11-libs/libXft-bgra-patch
 
 **Versions available**:
-9999
+2.3.3, 2.3.4
 
 BGRA patch for libXft
 
