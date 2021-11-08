@@ -21,7 +21,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="
-=x11-libs/libXft-2.3.3-r0"
+	~x11-libs/libXft-${PV}
+	"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
