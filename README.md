@@ -85,7 +85,7 @@ Based on ckb-next, provides patched version for specific device
 ## app-misc/headsetcontrol
 
 **Versions available**:
-2.3, 2.4, 9999
+2.4, 2.6, 9999
 
 Remotes:
 
