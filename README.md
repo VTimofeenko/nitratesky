@@ -107,7 +107,7 @@ A _very_ primitive telegram notification mechanism
 ## app-office/todoman
 
 **Versions available**:
-3.9.0, 4.0.0
+3.9.0, 4.0.0, 4.0.1
 
 Remotes:
 
@@ -230,7 +230,7 @@ Need to compare software, package or whatever versions? Comparing 1.0 and 1.1 co
 ## dev-python/atlassian-python-api
 
 **Versions available**:
-1.17.6, 2.3.0, 3.11.0
+2.3.0, 3.11.0, 3.14.1
 
 Remotes:
 
@@ -247,7 +247,7 @@ Provides a simple python interface for interacting with Atlassian products
 ## dev-python/libversion
 
 **Versions available**:
-1.2.3
+1.2.3, 1.2.4
 
 Remotes:
 
@@ -461,7 +461,7 @@ A dracut module that installs pcscd daemon into initramfs
 ## www-apps/hugo
 
 **Versions available**:
-0.83.1, 0.84.3, 0.85.0, 0.86.1, 0.87.0
+0.85.0, 0.86.1, 0.87.0
 
 Remotes:
 
