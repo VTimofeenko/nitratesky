@@ -1,0 +1,14 @@
+Title: Removal of zabbix package from nitratesky overlay
+Author: Vladimir Timofeenko <overlay.maintain@vtimofeenko.com>
+Posted: 2021-11-24
+Revision: 1
+News-Item-Format: 2.0
+Display-If-Installed: net-analyzer/zabbix::nitratesky
+
+Originally this package was posted in this overlay to test agent2
+useflag.
+
+Since the package with this flag is now available in the main repo
+there is little point keeping it here.
+
+Zabbix package will be removed from nitratesky overlay in ~month.
