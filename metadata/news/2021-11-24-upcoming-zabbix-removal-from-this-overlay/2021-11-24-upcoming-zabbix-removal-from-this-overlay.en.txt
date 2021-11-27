@@ -3,7 +3,7 @@ Author: Vladimir Timofeenko <overlay.maintain@vtimofeenko.com>
 Posted: 2021-11-24
 Revision: 1
 News-Item-Format: 2.0
-Display-If-Installed: net-analyzer/zabbix::nitratesky
+Display-If-Installed: net-analyzer/zabbix
 
 Originally this package was posted in this overlay to test agent2
 useflag.
