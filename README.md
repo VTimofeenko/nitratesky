@@ -372,16 +372,6 @@ ncurses Spotify client written in Rust
 
 ncurses Spotify client written in Rust using librespot. It is heavily inspired by ncurses MPD clients, such as ncmpc. The author's motivation was to provide a simple and resource friendly alternative to the official client as well as to support platforms that currently don't have a Spotify client, such as the *BSDs.
 *Maintainer note*: cover feature not yet supported.
-## net-analyzer/zabbix
-
-**Versions available**:
-5.2.4
-
-ZABBIX is software for monitoring of your applications, network and servers
-
-ZABBIX is software for monitoring of your applications, network and servers. ZABBIX supports both polling and trapping techniques to collect data from monitored hosts. A flexible notification mechanism allows easy and quickly configure different types of notifications for pre-defined events.
-This version differs from main tree by adding agent2 use flag.
-Bug #749351
 ## net-im/teams-for-linux
 
 **Versions available**:
