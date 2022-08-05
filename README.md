@@ -375,7 +375,7 @@ ncurses Spotify client written in Rust using librespot. It is heavily inspired b
 ## net-im/teams-for-linux
 
 **Versions available**:
-0.7.0, 1.0.0
+0.7.0, 1.0.0, 1.0.25
 
 Remotes:
 
