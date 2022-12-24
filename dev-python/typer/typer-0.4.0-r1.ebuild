@@ -1,10 +1,10 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
+PYTHON_COMPAT=( python3_{6..9} )
+DISTUTILS_USE_PEP517=flit
 inherit distutils-r1
 
 DESCRIPTION="Typer, build great CLIs. Easy to code. Based on Python type hints."
@@ -23,7 +23,6 @@ RDEPEND="
 	<dev-python/click-9.0.0[${PYTHON_USEDEP}]
 "
 BDEPEND="
-	dev-python/pyproject2setuppy[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	test? (
 		dev-python/pytest[${PYTHON_USEDEP}]
