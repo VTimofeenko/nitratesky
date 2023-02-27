@@ -276,23 +276,6 @@ Python client for Neovim
 
 Pynvim implements support for python plugins in Nvim. It also works as a library for connecting to and scripting Nvim processes through its msgpack-rpc API.
 Compared to the Gentoo repo this ebuild has RDEPEND in addition to DEPEND. I am testing its interaction with binpkgs before submitting a pull request.
-## dev-python/pyzabbix
-
-**Versions available**:
-0.8.2, 1.0.0
-
-Remotes:
-
-* **PyPI**: [link](https://pypi.python.org/pypi/pyzabbix/).
-
-	Version: [![PyPI version fury.io](https://badge.fury.io/py/pyzabbix.svg)](https://pypi.python.org/pypi/pyzabbix/) [![PyPI version shields.io](https://img.shields.io/pypi/v/pyzabbix.svg)](https://pypi.python.org/pypi/pyzabbix/)
-* **GitHub**: [link](https://github.com/lukecyca/pyzabbix).
-
-	Release: [![GitHub release](https://img.shields.io/github/release/lukecyca/pyzabbix.svg)](https://GitHub.com/lukecyca/pyzabbix/releases/)
-
-Zabbix API Python interface
-
-
 ## dev-python/typer
 
 **Versions available**:
