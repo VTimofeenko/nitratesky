@@ -107,7 +107,7 @@ A _very_ primitive telegram notification mechanism
 ## app-office/todoman
 
 **Versions available**:
-3.9.0, 4.0.0, 4.0.1
+4.0.0, 4.0.1
 
 Remotes:
 
