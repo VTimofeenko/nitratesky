@@ -230,7 +230,7 @@ Need to compare software, package or whatever versions? Comparing 1.0 and 1.1 co
 ## dev-python/atlassian-python-api
 
 **Versions available**:
-2.3.0, 3.11.0, 3.14.1
+3.11.0, 3.14.1
 
 Remotes:
 
