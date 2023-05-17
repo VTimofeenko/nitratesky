@@ -261,7 +261,7 @@ Python bindings for libversion, which provides fast, powerful and correct generi
 ## dev-python/pynvim
 
 **Versions available**:
-0.4.2, 0.4.3
+0.4.3
 
 Remotes:
 
