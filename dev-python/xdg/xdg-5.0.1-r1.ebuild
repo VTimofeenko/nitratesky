@@ -4,7 +4,7 @@
 EAPI=7
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{6..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 inherit distutils-r1
 
 DESCRIPTION="Provides functions to return paths defined by XDG Base Directory Specification"
