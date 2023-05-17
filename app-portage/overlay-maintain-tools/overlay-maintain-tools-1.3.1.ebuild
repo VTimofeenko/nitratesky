@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{8,9} )
+PYTHON_COMPAT=( python3_{9..11} )
 inherit distutils-r1
 
 MY_PN="overlay_maintain_tools"
@@ -21,7 +21,7 @@ RDEPEND="
 	dev-python/jinja[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	>=dev-python/python-dotenv-0.15.0[${PYTHON_USEDEP}]
-	~dev-python/toolz-0.11.1[${PYTHON_USEDEP}]
+	>=dev-python/toolz-0.11.1[${PYTHON_USEDEP}]
 	~dev-python/typer-0.4.0[${PYTHON_USEDEP}]
 	dev-python/libversion[${PYTHON_USEDEP}]
 "

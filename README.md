@@ -139,7 +139,7 @@ git-verify-signature.eclass is based on and exposes the same variables
 ## app-portage/overlay-maintain-tools
 
 **Versions available**:
-1.3.0, 1.3.1
+1.3.1
 
 Remotes:
 
