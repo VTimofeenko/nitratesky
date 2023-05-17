@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{8,9} )
+PYTHON_COMPAT=( python3_{9..10} )
 DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit distutils-r1 bash-completion-r1
@@ -24,8 +24,8 @@ RDEPEND="
 dev-python/toml[${PYTHON_USEDEP}]
 dev-python/requests[${PYTHON_USEDEP}]
 >=dev-python/pyxdg-0.26-r1[${PYTHON_USEDEP}]
-~dev-python/tomlkit-0.7.2[${PYTHON_USEDEP}]
-~dev-python/markdown-3.3.4[${PYTHON_USEDEP}]
+~dev-python/tomlkit-0.11.7[${PYTHON_USEDEP}]
+~dev-python/markdown-3.4.3[${PYTHON_USEDEP}]
 >=dev-python/marshmallow-3.12.1[${PYTHON_USEDEP}]
 zsh-completion? ( app-shells/zsh )
 "
